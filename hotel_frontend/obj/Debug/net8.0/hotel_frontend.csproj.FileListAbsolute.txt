@@ -58,3 +58,4 @@ E:\hotel_frontend\hotel_frontend\obj\Debug\net8.0\refint\hotel_frontend.dll
 E:\hotel_frontend\hotel_frontend\obj\Debug\net8.0\hotel_frontend.pdb
 E:\hotel_frontend\hotel_frontend\obj\Debug\net8.0\hotel_frontend.genruntimeconfig.cache
 E:\hotel_frontend\hotel_frontend\obj\Debug\net8.0\ref\hotel_frontend.dll
+E:\hotel_frontend\hotel_frontend\obj\Debug\net8.0\hotel_frontend.sourcelink.json
