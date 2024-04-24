@@ -218,9 +218,10 @@ html { /*not touch*/
     }
 
         .home .slide .welcome-text {
+            margin-top:6%;
             position: absolute;
             margin-left: 170px;
-            font-size: 45px;
+            font-size: 5rem;
             font-weight: 200;
             text-transform: uppercase;
             color: white;
@@ -231,7 +232,7 @@ html { /*not touch*/
 
     .home .scroldown {
         position: absolute;
-        top: 90%; /* Điều chỉnh vị trí của thanh scroll xuống phía dưới */
+        bottom: 4.5%; /* Điều chỉnh vị trí của thanh scroll xuống phía dưới */
         left: 50%;
         transform: translate(-50%, -50%);
         width: 1px;
@@ -243,8 +244,8 @@ html { /*not touch*/
         .home .scroldown::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0; /* Đặt gốc của gradient ở giữa */
+            top: 0%;
+            left: 0%; /* Đặt gốc của gradient ở giữa */
             transform: translateX(-50%); /* Dịch chuyển ngang thành phần điều hướng */
             width: 100%;
             height: 100%;
@@ -521,44 +522,42 @@ picture {
 
 /*kích cỡ chữ*/
 /*chữ nhỏ*/
-
 #pageHome .par-b {
     color: rgba(106, 99, 90, 1);
     font-family: "Open Sans", sans-serif;
-    font-size: 18px;
+    font-size: 1.6rem; /* Thay đổi từ px thành rem */
     font-weight: 400;
-    margin-right: -140px;
-    height: 128px;
+    margin-right: -8.75%; /* Thay đổi từ px thành % */
+    height: 8rem; /* Thay đổi từ px thành rem */
     opacity: 1;
-    margin-left: 64px;
-    margin-bottom: 28rem;
+    margin-left: 12%; /* Thay đổi từ px thành % */
+    margin-bottom: 32rem; /* Bạn có thể điều chỉnh giá trị này nếu cần thiết */
     color: rgba(0, 0, 0,1);
     text-transform: none;
 }
 
-
-/*chỉnh chữ welcome lớn*/
+/*chữ lớn*/
 #pageHome .scrollspy-example h2 {
-    line-height: 168px;
+    line-height: 14rem; /* Thay đổi từ px thành rem */
     font-weight: 400;
     color: rgba(71, 55, 35, 1);
-    margin-left: 64px; /*khoảng cách tiêu đề*/
-    margin-bottom: 74px;
-    margin-top: 190px;
+    margin-left: 4%; /* Thay đổi từ px thành % */
+    margin-bottom: 8rem; /* Thay đổi từ px thành rem */
+    margin-top: 25rem; /* Thay đổi từ px thành rem */
     font-family: 'HV_Muse', sans-serif;
 }
 
 #pageHome .scrollspy-example .wel {
-    font-size: 120px;
+    font-size: 12rem; /* Thay đổi từ px thành rem */
     text-transform: none;
 }
 
-
 @media (min-width: 768px) and (min-width:1200px) {
     #pageHome .scrollspy-example h2 {
-        font-size: 9.9375rem
+        font-size: 9.9375rem; /* Thay đổi từ px thành rem */
     }
 }
+
 
 
 #pageHome section.materials .topRow .leftPart, #pageHome section.materials .topRow .rightPart {
@@ -1629,3 +1628,295 @@ img {
         -webkit-transform: translateY(60%);
     }
 }
+
+
+
+.title p {
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 3rem;
+    margin-bottom: 10%;
+    margin-top: 20%;
+    text-align: center;
+    text-transform: none;
+}
+
+/* services */
+
+.servs {
+    margin-left: 44px;
+    margin-bottom: 350px;
+    margin-top: -540px;
+}
+
+.ourserv p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(71, 55, 35, 1);
+    font-weight: 600;
+    margin-left: 742px;
+    letter-spacing: 2.4px;
+    margin-top: 4px;
+}
+
+
+.servs .ourserv2 {
+    font-size: 34px;
+    margin-left: 738px;
+    margin-top: -490px;
+    color: rgba(71, 55, 35, 1);
+    font-weight: 600;
+    font-family: 'HV_Muse', sans-serif;
+}
+
+
+.ourserv1 p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-left: 742px;
+    margin-top: 24px;
+    color: black;
+    line-height: 24px;
+    text-transform: none;
+}
+
+.servs .button {
+    margin-left: 742px;
+    margin-top: 74px;
+    padding: 12px 35px 12px 35px;
+    font-size: 14px;
+    border-color: rgba(71, 55, 35, 1);
+    color: rgba(71, 55, 35, 1);
+    background-color: white;
+    font-weight: 550;
+    border: solid 1px;
+    z-index: 0;
+}
+
+    .servs .button:hover {
+        color: white;
+        background-color: rgba(170, 131, 83, 1);
+        z-index: 0;
+    }
+/*image-services*/
+
+/* Tạo kiểu vùng chứa hình ảnh */
+.ctn {
+    max-width: 600px;
+    max-height: 734px;
+    position: relative;
+    display: inline-block; /* Sử dụng display inline-block để hai hình ảnh sẽ được hiển thị cùng một hàng */
+    overflow: hidden; /* Ngăn chặn phần tử con tràn ra ngoài */
+    margin-left: 64px;
+}
+
+    /* Tạo kiểu cho hình ảnh */
+    .ctn .img {
+        width: 634px;
+        height: 734px;
+        display: block;
+        opacity: 1;
+        transition: transform 0.6s ease; /* Thêm hiệu ứng chuyển đổi */
+    }
+
+
+
+    /* Thêm hiệu ứng khi hover */
+    .ctn:hover {
+        --arrow: url("image/detail.svg");
+        cursor: var(--arrow), auto;
+    }
+
+
+        /* Hiệu ứng phóng to hình ảnh khi hover */
+        .ctn:hover .img {
+            transform: scale(1.2); /* Phóng to 20% khi rê chuột vào */
+        }
+
+/* end */
+
+
+
+/* services2 */
+
+.servs2 {
+    margin-left: 44px;
+    margin-bottom: 350px;
+    margin-top: -550px;
+}
+
+.os p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(71, 55, 35, 1);
+    font-weight: 400;
+    margin-left: 72px;
+    letter-spacing: 2.4px;
+    margin-top: 4px;
+}
+
+
+.servs2 .os2 {
+    font-size: 34px;
+    margin-left: 68px;
+    margin-top: -490px;
+    color: rgba(71, 55, 35, 1);
+    font-weight: 400;
+    font-family: 'HV_Muse', sans-serif;
+}
+
+
+.os1 p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-left: 74px;
+    margin-top: 24px;
+    text-transform: none;
+}
+
+.servs2 .button2 {
+    margin-left: 74px;
+    margin-top: 74px;
+    padding: 12px 35px 12px 35px;
+    font-size: 14px;
+    border-color: rgba(71, 55, 35, 1);
+    color: rgba(71, 55, 35, 1);
+    background-color: white;
+    font-weight: 550;
+    border: solid 1px;
+}
+
+    .servs2 .button2:hover {
+        color: white;
+        background-color: rgba(170, 131, 83, 1);
+    }
+/*image-services*/
+
+/* Tạo kiểu vùng chứa hình ảnh */
+.ctn2 {
+    max-width: 600px;
+    max-height: 734px;
+    position: relative;
+    display: block; /* Sử dụng display inline-block để hai hình ảnh sẽ được hiển thị cùng một hàng */
+    overflow: hidden; /* Ngăn chặn phần tử con tràn ra ngoài */
+    margin-left: 664px;
+}
+
+    /* Tạo kiểu cho hình ảnh */
+    .ctn2 .img {
+        width: 634px;
+        height: 734px;
+        display: block;
+        opacity: 1;
+        transition: transform 0.6s ease; /* Thêm hiệu ứng chuyển đổi */
+    }
+
+
+
+    /* Thêm hiệu ứng khi hover */
+    .ctn2:hover {
+        --arrow: url("image/detail.svg");
+        cursor: var(--arrow), auto;
+    }
+
+        /* Hiệu ứng phóng to hình ảnh khi hover */
+        .ctn2:hover .img {
+            transform: scale(1.2); /* Phóng to 20% khi rê chuột vào */
+        }
+
+/* end */
+
+
+
+/* services4 */
+
+.servs4 {
+    margin-left: 44px;
+    margin-bottom: 300px;
+    margin-top: -560px;
+}
+
+.osr p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(71, 55, 35, 1);
+    font-weight: 400;
+    margin-left: 72px;
+    letter-spacing: 2.4px;
+    margin-top: 4px;
+}
+
+
+.servs4 .osr2 {
+    font-size: 34px;
+    margin-left: 68px;
+    margin-top: -490px;
+    color: rgba(71, 55, 35, 1);
+    font-weight: 400;
+    font-family: 'HV_Muse', sans-serif;
+}
+
+
+.osr1 {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-left: 74px;
+    margin-top: 24px;
+}
+
+.servs4 .button4 {
+    margin-left: 74px;
+    margin-top: 74px;
+    padding: 12px 35px 12px 35px;
+    font-size: 14px;
+    border-color: rgba(71, 55, 35, 1);
+    color: rgba(71, 55, 35, 1);
+    background-color: white;
+    font-weight: 550;
+    border: solid 1px;
+}
+
+    .servs4 .button4:hover {
+        background-color: rgba(170, 131, 83, 1);
+        color: white;
+    }
+/*image-services*/
+
+/* Tạo kiểu vùng chứa hình ảnh */
+.ctn4 {
+    max-width: 600px;
+    max-height: 734px;
+    position: relative;
+    display: block; /* Sử dụng display inline-block để hai hình ảnh sẽ được hiển thị cùng một hàng */
+    overflow: hidden; /* Ngăn chặn phần tử con tràn ra ngoài */
+    margin-left: 664px;
+    margin-top: -80px;
+}
+
+    /* Tạo kiểu cho hình ảnh */
+    .ctn4 .img {
+        width: 634px;
+        height: 734px;
+        display: block;
+        opacity: 1;
+        transition: transform 0.6s ease; /* Thêm hiệu ứng chuyển đổi */
+    }
+
+
+
+    /* Thêm hiệu ứng khi hover */
+    .ctn4:hover {
+        --arrow: url("image/detail.svg");
+        cursor: var(--arrow), auto;
+    }
+
+        /* Hiệu ứng phóng to hình ảnh khi hover */
+        .ctn4:hover .img {
+            transform: scale(1.2); /* Phóng to 20% khi rê chuột vào */
+        }
+
+/* end */

@@ -165,6 +165,102 @@
       "PackagePath": "staticwebassets\\css\\image\\urban_double.jpeg"
     },
     {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Accommodation cover.png",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Accommodation cover.png"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Double urban loft.jpeg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Double urban loft.jpeg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Double urban.jpeg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Double urban.jpeg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Early booking.jpg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Early booking.jpg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Introduction 1.jpg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Introduction 1.jpg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Introduction 2.jpeg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Introduction 2.jpeg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Meeting room.png",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Meeting room.png"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Other promotion.jpg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Other promotion.jpg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Unique junior loft suite.jpeg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Unique junior loft suite.jpeg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Unique junior suite.jpeg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Unique junior suite.jpeg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\Your Perfect Accommodation Awaits.png",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\Your Perfect Accommodation Awaits.png"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\arrow_left.svg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\arrow_left.svg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\arrow_right.png",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\arrow_right.png"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\detail.svg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\detail.svg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\eleganza hotel.png",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\eleganza hotel.png"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\eleganza hotel.svg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\eleganza hotel.svg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\eleganza_scroll.svg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\eleganza_scroll.svg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\hình minh chứng.jpg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\hình minh chứng.jpg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\khung_mail.png",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\khung_mail.png"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\mail.png",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\mail.png"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\r1.svg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\r1.svg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\r2.svg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\r2.svg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\r3.svg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\r3.svg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image_accomodation\\urban_double.jpeg",
+      "PackagePath": "staticwebassets\\css\\image_accomodation\\urban_double.jpeg"
+    },
+    {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },

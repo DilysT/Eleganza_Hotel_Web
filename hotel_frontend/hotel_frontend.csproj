@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Include="wwwroot\css\image\.DS_Store" />
+    <None Include="wwwroot\css\image_accomodation\.DS_Store" />
   </ItemGroup>
 
 </Project>
