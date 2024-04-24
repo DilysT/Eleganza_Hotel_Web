@@ -153,6 +153,17 @@ html { /*not touch*/
                 transition: none;
             }
 
+        .header .general a[href="#home"]:not(:hover)::after {
+            width: 100%; /* Kéo dài gạch chân khi hover */
+            left: 0; /* Đặt lại vị trí ban đầu của gạch chân */
+            background-color: white;
+        }
+
+    .header.scrolled .general a[href="#home"]:not(:hover)::after {
+        width: 100%; /* Kéo dài gạch chân khi hover */
+        background-color: rgba(71, 55, 35, 1);
+    }
+
     /* Gạch chân dưới chữ */
     .header .general a::after {
         content: "";
@@ -170,7 +181,7 @@ html { /*not touch*/
         font-weight: 400;
         font-size: 14px;
     }
-
+    
         /* Khi hover chữ */
         .header .general a:hover::after {
             width: 100%; /* Kéo dài gạch chân khi hover */
@@ -217,7 +228,7 @@ html { /*not touch*/
         z-index: 2;
     }
 
-        .home .slide .welcome-text {
+        .home .slide .welcome-text{
             margin-top:6%;
             position: absolute;
             margin-left: 170px;
@@ -226,13 +237,14 @@ html { /*not touch*/
             text-transform: uppercase;
             color: white;
             z-index: 10;
+            text-transform: capitalize;
         }
 
 
 
     .home .scroldown {
         position: absolute;
-        bottom: 4.5%; /* Điều chỉnh vị trí của thanh scroll xuống phía dưới */
+        bottom: 1%; /* Điều chỉnh vị trí của thanh scroll xuống phía dưới */
         left: 50%;
         transform: translate(-50%, -50%);
         width: 1px;
@@ -1633,7 +1645,7 @@ img {
 
 .title p {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-family: 'Open Sans', sans-serif;
     line-height: 3rem;
     margin-bottom: 10%;
@@ -1654,7 +1666,7 @@ img {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     color: rgba(71, 55, 35, 1);
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 742px;
     letter-spacing: 2.4px;
     margin-top: 4px;
@@ -1860,12 +1872,13 @@ img {
 }
 
 
-.osr1 {
+.osr1 p{
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     margin-left: 74px;
     margin-top: 24px;
+    text-transform:none;
 }
 
 .servs4 .button4 {
