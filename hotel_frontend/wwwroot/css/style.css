@@ -81,7 +81,7 @@ html { /*not touch*/
     justify-content: space-between; /* Căn chỉnh các thành phần theo khoảng cách đều nhau */
     padding: 25px; /* Khoảng cách nội dung và mép */
     align-items: center; /* Căn chỉnh các thành phần theo trục dọc */
-
+    cursor: pointer;
     transition: background-color 0.4s ease-in-out;
 }
 
@@ -234,7 +234,6 @@ html { /*not touch*/
             margin-left: 170px;
             font-size: 5rem;
             font-weight: 200;
-            text-transform: uppercase;
             color: white;
             z-index: 10;
             text-transform: capitalize;
@@ -1933,3 +1932,21 @@ img {
         }
 
 /* end */
+
+
+@media screen and (max-width: 1030px) {
+    .home .slide .welcome-text {
+        font-size: 4.75rem; /* Điều chỉnh kích thước font cho kích thước màn hình nhỏ hơn */
+        margin-left: 100px; /* Điều chỉnh margin-left nếu cần */
+    }
+}
+
+@media screen and (max-width: 817px) {
+    .home .slide .welcome-text {
+        font-size: 4rem; /* Điều chỉnh kích thước font cho kích thước màn hình nhỏ hơn */
+        margin-left: 50px; /* Điều chỉnh margin-left nếu cần */
+    }
+}
+
+
+

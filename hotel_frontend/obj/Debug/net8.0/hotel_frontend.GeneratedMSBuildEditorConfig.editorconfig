@@ -22,6 +22,22 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21tb2RhdGlvblxBY2NvbW1vZGF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/hotel_frontend/hotel_frontend/Views/Accom_detail/Accom_detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21fZGV0YWlsXEFjY29tX2RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/hotel_frontend/hotel_frontend/Views/Accom_detail_2/Accom_detail_2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21fZGV0YWlsXzJcQWNjb21fZGV0YWlsXzIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/hotel_frontend/hotel_frontend/Views/Accom_detail_3/Accom_detail_3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21fZGV0YWlsXzNcQWNjb21fZGV0YWlsXzMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/hotel_frontend/hotel_frontend/Views/Accom_detail_4/Accom_detail_4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21fZGV0YWlsXzRcQWNjb21fZGV0YWlsXzQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/hotel_frontend/hotel_frontend/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

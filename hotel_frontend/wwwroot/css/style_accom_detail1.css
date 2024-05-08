@@ -1,0 +1,970 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+@font-face {
+  font-family: 'HV_Muse';
+  src: url('Font/HVMuse-Regular.woff') format('woff'),
+      url('Font/HVMuse-Regular.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  
+}
+
+
+
+@font-face {
+  font-family: 'HVMuse';
+  src: url('Font/HVMuse-Italic.woff2') format('woff2'),
+      url('Font/HVMuse-Italic.woff') format('woff');
+  font-weight: lighter;
+  font-style: italic;
+  font-display: normal;
+}
+
+
+:root{
+    --primary:#09537b;
+    --secondary:#24b2ce;
+    --blackground-color:white;
+    
+}
+/*chỉnh funtion chung*/ 
+*{
+
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+html{ /*not touch*/
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary);
+    border-radius: .5rem;
+}
+
+
+
+.heading{
+   
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.btn{ /*button book now*/
+    position:absolute;
+    display:inline-block;
+    justify-content: right;
+    font-size: 1.7rem;
+    cursor: pointer;
+   
+}
+
+/* header */
+
+/* Thiết lập header */
+.header {
+    position: fixed; /* Vị trí cố định */
+    top: 100;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Độ sâu hiển thị */
+    background: var(--white); /* Màu nền */
+    box-shadow: var(--box-shadow); /* Đổ bóng */
+    display: flex; /* Sắp xếp các thành phần theo hàng ngang */
+    justify-content: space-between; /* Căn chỉnh các thành phần theo khoảng cách đều nhau */
+    padding: 25px; /* Khoảng cách nội dung và mép */
+    align-items: center; /* Căn chỉnh các thành phần theo trục dọc */
+
+    transition: background-color 0.4s ease-in-out;
+}
+
+
+
+    /* Button "Book now" */
+    .header .btn {
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+        border: 1px solid white; /* Thêm khung đen 2px */
+        padding-top: 12px; /* Thêm padding cho nút */
+        padding-bottom: 12px;
+        padding-left: 35px;
+        padding-right: 35px;
+        transition: none;
+    }
+
+
+    .header .butt .btn:hover {
+        background-color: rgba(170, 131, 83, 1);
+        border: 1px solid transparent;
+    }
+
+
+
+    .header .butt .btn:active {
+        background-color: rgba(170, 131, 83, 1);
+    }
+
+    .header .butt {
+        background: var(--white); /* Màu nền */
+    }
+
+        .header.butt .btn {
+            border-width: 10px;
+        }
+
+    /* Chữ trong navbar */
+    .header a {
+        font-size: 1.7rem;
+        color: white; /* Màu chữ */
+        margin: 0 1rem; /* Khoảng cách giữa các từ */
+        position: relative; /* Đặt vị trí tương đối cho gạch chân */
+        transition: color 0.4s ease-in-out;
+    }
+
+    .header.scrolled {
+        background-color: white;
+        opacity: 0.98;
+    }
+
+        .header.scrolled .general a {
+            color: rgba(71, 55, 35, 1);
+            background-repeat: no-repeat;
+            font-weight: 400;
+        }
+
+        .header.scrolled .btn {
+            border-color: rgba(71, 55, 35, 1); /* Đổi màu border thành màu đen */
+            color: rgba(71, 55, 35, 1);
+            font-weight: 600;
+        }
+
+            .header.scrolled .btn:hover {
+                border-color: white; /* Đổi màu border thành màu đen */
+                color: white;
+                transition: none;
+            }
+
+    .header .general a[href="#home"]:not(:hover)::after {
+        width: 100%; /* Kéo dài gạch chân khi hover */
+        left: 0; /* Đặt lại vị trí ban đầu của gạch chân */
+        background-color: white;
+    }
+
+    .header.scrolled .general a[href="#home"]:not(:hover)::after {
+        width: 100%; /* Kéo dài gạch chân khi hover */
+        background-color: rgba(71, 55, 35, 1);
+    }
+
+    /* Gạch chân dưới chữ */
+    .header .general a::after {
+        content: "";
+        position: absolute; /* Đặt vị trí tuyệt đối cho gạch chân */
+        bottom: -2px; /* Điều chỉnh vị trí của gạch chân */
+        left: 0; /* Đặt gạch chân ở bên trái */
+        width: 0; /* Ẩn gạch chân ban đầu */
+        height: 2px; /* Chiều cao của gạch chân */
+        background-color: white; /* Màu gạch chân */
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out; /* Hiệu ứng chuyển đổi */
+    }
+
+    .header .general {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+
+
+        /* Khi hover chữ */
+        .header .general a:hover::after {
+            width: 100%; /* Kéo dài gạch chân khi hover */
+            left: 0; /* Đặt lại vị trí ban đầu của gạch chân */
+        }
+
+    /* Khi không hover chữ */
+    .header a:not(:hover)::after {
+        width: 0; /* Thu hẹp gạch chân khi không hover */
+        left: 50%; /* Đưa gạch chân về giữa */
+    }
+
+    .header.scrolled .general a::after {
+        background-color: rgba(71, 55, 35, 1); /* Đổi màu gạch chân thành màu đen khi scroll xuống */
+    }
+
+    .header .logo1 {
+        display: none; /* Ẩn hình ảnh ban đầu */
+    }
+
+    .header.scrolled .logo1 {
+        display: block; /* Hiển thị hình ảnh khi scroll xuống */
+    }
+
+    .header.scrolled .logo {
+        display: none;
+    }
+/* home */
+
+.home{
+    padding: 0;
+    font-family: 'hv_muse', sans-serif;
+}
+
+.home .slide {
+  object-fit:fill; /* Đảm bảo hình ảnh không bị biến đổi tỉ lệ */
+  object-position: bottom; /* Đảm bảo hình ảnh được căn giữa */
+  height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  z-index: -1;
+}
+
+
+@keyframes animate {
+    0% {
+        transform-origin: top; /* Đặt gốc biến đổi */
+        transform: scaleY(0);
+    }
+    50% {
+        transform-origin: top; /* Đặt gốc biến đổi */
+        transform: scaleY(1);
+    }
+    52% {
+        transform-origin: bottom; /* Đặt gốc biến đổi */
+        transform: scaleY(1);
+    }
+    100% {
+        transform-origin: bottom; /* Đặt gốc biến đổi */
+        transform: scaleY(0);
+    }
+}
+
+
+/* end */
+
+
+
+/* services */
+
+.servs{
+margin-right:100px;
+margin-bottom: 60%; /*khoảng cách giữa title và feature*/
+margin-top: -675px;
+
+}
+
+.ourserv p{
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color:rgba(71, 55, 35, 1);
+  font-weight: 600;
+margin-left: 34%;
+  letter-spacing: 2.4px;
+  margin-top: 19px;
+}
+
+
+.servs .ourserv2{
+   justify-content: center;
+
+font-size: 34px;
+margin-left: 36%;
+margin-top: -490px;
+color:rgba(71, 55, 35, 1);
+font-weight: 600;
+font-family: 'HV_Muse', sans-serif;
+}
+
+
+.ourserv1 p{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin-left: 10%;
+  margin-top: 24px;
+  color: black;
+  line-height: 24px;
+  text-transform: none;
+  text-align: center;
+}
+
+.servs .button{
+  margin-left: 49%;
+  margin-top: 50px;
+  padding: 12px 35px 12px 35px;
+  font-size: 14px;
+  border-color: rgba(71, 55, 35, 1);
+  color: rgba(71, 55, 35, 1);
+  background-color: white;
+  font-weight: 550;
+  border:  solid 1px;
+  z-index: 0;
+}
+
+.servs .button:hover {
+  background-color: rgba(170, 131, 83, 1);
+  z-index: 0;
+}
+/*image-services*/
+
+
+
+/* services2 */
+
+.servs2{
+margin-left: 44px;
+margin-bottom: 350px;
+
+}
+
+.os p{
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color:black;
+  font-weight: 700;
+margin-left: 845px;
+  letter-spacing: 2.4px;
+  margin-top: -740px;
+}
+   
+.os1 p{
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 35px;
+  margin-left: 845px;
+  margin-top: 24px;
+  text-transform: none;
+  color: rgba(102, 102, 102, 1);
+}
+
+
+/*image-services*/
+
+/* Tạo kiểu vùng chứa hình ảnh */
+.ctn2 {
+    max-width: 644px;
+    max-height: 734px;
+    position: relative;
+    display: block; /* Sử dụng display inline-block để hai hình ảnh sẽ được hiển thị cùng một hàng */
+    overflow: hidden; /* Ngăn chặn phần tử con tràn ra ngoài */
+    margin-left: 64px;
+    background-size: cover; /* Đảm bảo hình ảnh vừa với phần tử */
+    background-position: center; /* Canh giữa hình ảnh */
+}
+
+/* Tạo kiểu cho hình ảnh */
+.ctn2 .img {
+  width: 584px;
+  height: 734px;
+  display: block;
+  opacity: 1;
+  transition: transform 0.6s ease; /* Thêm hiệu ứng chuyển đổi */
+}
+
+
+
+/* footer */
+.footer {
+ 
+  background: rgba(26, 26, 26, 1);
+  height: 100%; /* thay đổi từ 637px thành 100% */
+  position: relative;
+}
+
+.contact {
+  position: absolute;
+  top: 14%;
+  left: 40%;
+  color: rgba(211, 211, 211, 1);
+  font-size: 2.2vw; /* thay đổi từ px thành vw */
+  font-weight: 400;
+  font-family: "HV_Muse", sans-serif;
+}
+
+.phonenumber {
+  position: absolute;
+  top: 26%; /* tính toán vị trí dựa trên top của .contact */
+  left: 42%;
+  color: #fff;
+  font-size: 3.2vw; /* thay đổi từ px thành vw */
+  font-family: 'HV_Muse', sans-serif;
+}
+
+.email {
+  position: absolute;
+  color: white;
+  font-size: 1.2vw; /* thay đổi từ px thành vw */
+  border-width: 0.2vw; /* thay đổi từ px thành vw */
+  top: 42%; /* tính toán vị trí dựa trên top của .phonenumber */
+  left: 43%;
+  border-style: solid;
+  padding-top: 1vw; /* thay đổi từ px thành vw */
+  padding-bottom: 1vw;
+  padding-left:4vw;
+  padding-right: 2vw;
+  border-radius: 4vw; /* thay đổi từ px thành vw */
+  text-transform: lowercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.khung1 {
+  width: 2.5vw; /* thay đổi từ px thành vw */
+  height: 2.5vw; /* thay đổi từ px thành vw */
+  margin-left: 43.75%;
+  margin-bottom: 19.5%;
+}
+
+.mail {
+  width: 1.8vw; /* thay đổi từ px thành vw */
+  height: 1.1vw; /* thay đổi từ px thành vw */
+  margin-left: -2.3vw; /* thay đổi từ px thành vw */
+  margin-bottom: 20vw;
+  margin-top: 17.9%;
+}
+
+.address {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Logo {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  font-size: 1.5vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mar {
+  position: absolute;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  top: 70%;
+  left: 42%;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.calle {
+  position: absolute;
+  top:70%;
+  right: 5%;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nocopy {
+  position: absolute;
+  top:88%;
+  left: 5%;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Logo1 {
+  position: absolute;
+  top:88%;
+  left: 11%;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+.poli {
+  position: absolute;
+  top:88%;
+  left: 76%;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.term {
+  position: absolute;
+  top:88%;
+  right: 5%;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* end */
+
+
+/* media queries */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem 3rem;
+    }
+
+}
+
+.abc{
+  margin-top:400px; /*khoảng cách giữa title và scroll hình*/
+  margin-bottom: 750px;
+  
+}
+
+.sliders {
+    padding-right: 20px;
+  margin-right: 30px;
+  width: 100vw;
+  height: 100vh;
+}
+.sliders img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo hình ảnh không bị biến đổi tỉ lệ */
+  object-position: center; /* Đảm bảo hình ảnh được căn giữa */
+}
+
+.outer-wrappers {
+  width: 82vh;
+  height: 99vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* wrapper containing our slides */
+.wrappers {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  overflow-y: hidden;
+}
+
+/*ourroom section*/ 
+
+/* start animation*/
+
+.sliders {
+    width: 1440px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+    /*text-button*/
+    .sliders .items {
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        height: 700px;
+        text-align: left;
+    }
+
+.image-overlay {
+    position: absolute;
+    display: block;
+    top: 280px;
+    left: 480px;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: left;
+    width: 1200px;
+}
+
+    .image-overlay h1 {
+        margin-left: 500px;
+        margin-bottom: -10px;
+        font-size: 16px;
+        z-index: 1;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .image-overlay p {
+        font-family: 'HV_Muse', sans-serif;
+        padding-left: 490px;
+        margin-bottom: -10px;
+        font-size: 86px;
+        font-weight: 400;
+        z-index: 1;
+    }
+
+.view-room-button {
+    margin-top: 36px;
+    height: 48px;
+    width: 150px;
+    font-size: 14px;
+    color: white;
+    border: white solid;
+    border-width: 1px;
+    background-color: transparent;
+    margin-left: 500px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.image-overlay .view-room-button:hover {
+    background-color: rgba(170, 131, 83, 1);
+    border: none;
+}
+
+/*text2*/
+.image-overlay1 {
+    position: absolute;
+    display: block;
+    top: 330px;
+    left: 970px;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+}
+
+    .image-overlay1 h1 {
+        margin-left: 500px;
+        margin-bottom: -10px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .image-overlay1 p {
+        font-family: 'HV_Muse', sans-serif;
+        padding-left: 490px;
+        margin-bottom: -10px;
+        font-size: 86px;
+        font-weight: 400;
+        font-weight: 400;
+        z-index: -1;
+    }
+
+    .image-overlay1 .view-room-button {
+        margin-top: 36px;
+        height: 48px;
+        width: 150px;
+        font-size: 14px;
+        color: white;
+        border: white solid;
+        border-width: 1px;
+        background-color: transparent;
+        margin-left: 500px;
+        z-index: 20;
+    }
+
+        .image-overlay1 .view-room-button:hover {
+            background-color: rgba(170, 131, 83, 1);
+            border: none;
+            z-index: 20;
+        }
+
+.image-overlay2_1 {
+    position: absolute;
+    display: block;
+    top: 245px;
+    left: -90px;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+}
+
+    .image-overlay2_1 p {
+        font-family: 'HV_Muse', sans-serif;
+        padding-left: 500px;
+        margin-bottom: -10px;
+        font-size: 86px;
+        font-weight: 400;
+        font-weight: 400;
+    }
+
+/*text2*/
+.image-overlay2_2 {
+    position: absolute;
+    display: inline;
+    top: 330px;
+    left: 440px;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    width: 1100px;
+}
+
+    .image-overlay2_2 h1 {
+        margin-left: 500px;
+        margin-bottom: -10px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .image-overlay2_2 p {
+        font-family: 'HV_Muse', sans-serif;
+        padding-left: 490px;
+        margin-bottom: -10px;
+        font-size: 86px;
+        font-weight: 400;
+        font-weight: 400;
+    }
+
+    .image-overlay2_2 .view-room-button {
+        margin-top: 36px;
+        height: 48px;
+        width: 150px;
+        font-size: 14px;
+        color: white;
+        border: white solid;
+        border-width: 1px;
+        background-color: transparent;
+        margin-left: 500px;
+        z-index: 20;
+    }
+
+        .image-overlay2_2 .view-room-button:hover {
+            background-color: rgba(170, 131, 83, 1);
+            border: none;
+        }
+/*text3*/
+
+.image-overlay2_3 {
+    position: absolute;
+    display: block;
+    top: 330px;
+    left: 970px;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    margin-bottom: 100;
+}
+
+    .image-overlay2_3 h1 {
+        margin-left: 500px;
+        margin-bottom: -10px;
+        font-size: 16px;
+        z-index: 1;
+        font-weight: 400;
+    }
+
+    .image-overlay2_3 p {
+        font-family: 'HV_Muse', sans-serif;
+        padding-left: 490px;
+        margin-bottom: -10px;
+        font-size: 86px;
+        font-weight: 400;
+        z-index: 1;
+    }
+
+    .image-overlay2_3 .view-room-button {
+        margin-top: 36px;
+        height: 48px;
+        width: 150px;
+        font-size: 14px;
+        color: white;
+        border: white solid;
+        border-width: 1px;
+        background-color: transparent;
+        margin-left: 500px;
+        z-index: 20;
+    }
+
+        .image-overlay2_3 .view-room-button:hover {
+            background-color: rgba(170, 131, 83, 1);
+            border: none;
+        }
+/*text4*/
+.image-overlay2_4 {
+    position: absolute;
+    display: block;
+    top: 340px;
+    left: 1030px;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    margin-bottom: 100;
+    width: 890px;
+}
+
+    .image-overlay2_4 h1 {
+        margin-left: 500px;
+        margin-bottom: -10px;
+        font-size: 16px;
+        z-index: 1;
+        font-weight: 400;
+    }
+
+    .image-overlay2_4 p {
+        font-family: 'HV_Muse', sans-serif;
+        padding-left: 490px;
+        margin-bottom: -10px;
+        font-size: 86px;
+        font-weight: 400;
+        z-index: 1;
+        word-wrap: normal;
+    }
+
+    .image-overlay2_4 .view-room-button {
+        margin-top: 36px;
+        height: 48px;
+        width: 150px;
+        font-size: 14px;
+        color: white;
+        border: white solid;
+        border-width: 1px;
+        background-color: transparent;
+        margin-left: 500px;
+        z-index: 20;
+    }
+
+        .image-overlay2_4 .view-room-button:hover {
+            background-color: rgba(170, 131, 83, 1);
+            border: none;
+        }
+/*end text-button*/
+
+
+.sliders .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1.5s;
+}
+
+    .sliders .list img {
+        width: 1400px;
+        max-width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.sliders .buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    left: 0%;
+    justify-content: space-between;
+}
+
+    .sliders .buttons button {
+        width: 300px;
+        height: 700px;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+    }
+
+    .sliders .buttons .pre {
+        z-index: 30;
+        width: 420px;
+    }
+
+    .sliders .buttons .nex {
+        margin-right: -250px;
+        width: 900px;
+    }
+
+    .sliders .buttons .pre:hover {
+        z-index: 30;
+        cursor: url("image/arrow_left.svg"), auto;
+    }
+
+    .sliders .buttons .nex:hover {
+        z-index: 2;
+        cursor: url("image/arrow_right.png"), auto;
+    }
+
+@media screen and (max-width: 800px) {
+    .sliders {
+        height: 400px;
+    }
+}
+
+/*end text-button*/
+
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1.5s;
+}
+
+    .slider .list img {
+        width: 1400px;
+        max-width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.slider .buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    left: 0%;
+    justify-content: space-between;
+}
+
+    .slider .buttons button {
+        height: 700px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .slider .buttons .pre {
+        z-index: 30;
+        width: 370px;
+        background-color: blue;
+    }
+
+    .slider .buttons .nex {
+        margin-right: -250px;
+        width: 600px;
+    }
+
+    .slider .buttons .pre:hover {
+        z-index: 30;
+        cursor: url("image/arrow_left.svg"), auto;
+    }
+
+    .slider .buttons .nex:hover {
+        z-index: 2;
+        cursor: url("image/arrow_right.png"), auto;
+    }
+
+@media screen and (max-width: 800px) {
+    .slider {
+        height: 400px;
+    }
+}
+
+/* end animation*/
+
+/* end animation*/

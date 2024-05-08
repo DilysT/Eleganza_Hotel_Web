@@ -1,0 +1,390 @@
+﻿<!-- header -->
+<head>
+    <link href="~/css/style_accom_detail1.css" rel="stylesheet" />
+</head>
+<header class="header">
+
+    <div class="logo1">
+        <a href="#home"><img src="~/css/image_accomodation/eleganza_scroll.svg" alt=""></a>
+    </div>
+
+    <div class="logo">
+        <a href="#home"><img src="~/css/image_accomodation/eleganza hotel.svg" alt=""></a>
+    </div>
+
+
+
+    <div class="general">
+        <a href="#home">Accommodation</a>
+        <a href="#room">Services</a>
+        <a href="#gallery">Promotion</a>
+    </div>
+    <button class="butt">
+        <a class="btn">BOOK NOW</a>
+    </button>
+
+</header>
+
+<!-- end -->
+<!-- home -->
+
+<section class="home" id="home">
+    <div class="scroldown"> </div>
+
+    <div class="swiper-slide slide">
+		<img src="~/css/img_accom_detail3/homepage1.jpg" />
+    </div>
+
+</section>
+
+<!-- end -->
+
+<section class="abc">
+
+    <div class="outer-wrappers">
+        <div class="wrappers">
+            <div class="sliders one">
+				<img src="~/css/img_accom_detail3/unique junior suite 1.jpeg" />
+            </div>
+            <div class="sliders two">
+				<img src="~/css/img_accom_detail3/unique junior suite 2.jpeg" />
+            </div>
+            <div class="sliders three">
+				<img src="~/css/img_accom_detail3/unique junior suite 3.jpeg" />
+            </div>
+
+            <div class="sliders four">
+				<img src="~/css/img_accom_detail3/unique junior suite 4.jpeg" />
+            </div>
+
+            <div class="sliders five">
+				<img src="~/css/img_accom_detail3/unique junior suite 5.jpeg" />
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- title -->
+
+<section class="servs">
+
+    <div class="ourserv2">
+        <h2>Unique Junior Suite</h2>
+    </div>
+
+    <div class="ourserv">
+        <p>  2 PEOPLE / 45 M<sup>2</sup> + Terrace &#160; &#160; &#160; FREE WIFI &#160; &#160; &#160; From $109</p>
+    </div>
+
+    <div class="ourserv1">
+        <p>
+            Each unique, each special, inviting exploration. Explore the space, the
+            <br> corners, the layout. A living lounge, a dreamy bed. Black bathrooms with
+            <br> exposed stone and light, turning us into precious jewels of desire. Discover
+            <br>luxury in simplicity.
+        </p>
+    </div>
+    <button class="button">
+        BOOK NOW
+    </button>
+
+</section>
+
+<!-- end -->
+<!-- services 2 -->
+<div class="ctn2">
+    <img class="img" src="~/css/img_accom_detail3/unique junior suite 7.jpeg" />alt="" />
+</div>
+
+
+<section class="servs2">
+
+    <div class="os">
+        <p>Feature</p>
+    </div>
+
+    <div class="os1">
+        <p>
+            Air conditioning<br>
+            Air conditioning<br>Private bathroom <br>Free WiFi<br>TV<br>Telephone<br>Satellite a nd cable channels<br>Safe<br>Heating<br>Wardrobe<br>Rainforest shower and shower hose<br>Hair drier<br>Amenities<br>Wake up call<br>heelchair access (subject to availability)
+        </p>
+    </div>
+
+</section>
+
+<!-- end -->
+<!-- room -->
+
+<section class="rooms">
+
+    
+
+    <div class="sliders">
+        <div class="list">
+            <div class="items">
+
+
+                <img src="~/css/image/urban_double.jpeg" alt="">
+
+
+
+                <div class="image-overlay">
+                    <h1>01</h1>
+                    <p>Double Urban</p>
+                    <button class="view-room-button">View Room</button>
+                </div>
+
+                <div class="image-overlay1">
+                    <h1>02</h1>
+                    <p>Double Loft</p>
+                    <button class="view-room-button">View Room</button>
+                </div>
+
+            </div>
+
+
+            <div class="items">
+
+                <img src="~/css/image/Double urban loft.jpeg" alt="">
+
+                <div class="image-overlay2_1">
+                    <p></p>
+                </div>
+
+                <div class="image-overlay2_2">
+                    <h1>02</h1>
+                    <p>Double Urban Loft</p>
+                    <button class="view-room-button">View Room</button>
+                </div>
+
+                <div class="image-overlay2_3">
+                    <h1>02</h1>
+                    <p>Unique Suite</p>
+                    <button class="view-room-button">View Room</button>
+                </div>
+
+            </div>
+
+
+
+            
+
+
+
+            <div class="items">
+
+                <img src="~/css/image/Unique junior loft suite.jpeg">
+
+                <div class="image-overlay2_1">
+                    <p></p>
+                </div>
+
+                <div class="image-overlay2_2">
+                    <h1>04</h1>
+                    <p>Unique junior Suite Loft</p>
+                    <button class="view-room-button">View Room</button>
+                </div>
+
+            </div>
+
+        </div>
+        `
+
+
+        <div class="buttons">
+            <button class="pre" id="prev"></button>
+            <button class="nex" id="next"></button>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+<!-- end -->
+
+<script>
+
+
+    // không đụng bên dưới
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Lấy phần tử "abc"
+        var abcSection = document.querySelector(".abc");
+        // Lấy khoảng cách từ đầu trang đến phần tử "abc"
+        var abcOffsetTop = abcSection.offsetTop;
+        // Biến kiểm tra xem chức năng scroll ngang đã được kích hoạt chưa
+        var horizontalScrollActivated = false;
+
+        // Thêm sự kiện scroll
+        window.addEventListener("scroll", function () {
+            // Lấy vị trí hiện tại của thanh cuộn
+            var scrollPosition = window.scrollY || window.pageYOffset;
+
+            // Kiểm tra nếu scroll đến phần tử "abc"
+            if (scrollPosition >= abcOffsetTop && !horizontalScrollActivated) {
+                // Kích hoạt chức năng scroll ngang
+                activateHorizontalScroll();
+                // Đặt cờ đã kích hoạt chức năng scroll ngang
+                horizontalScrollActivated = true;
+            } else if (scrollPosition < abcOffsetTop && horizontalScrollActivated) {
+                // Nếu scroll lên trên phần tử "abc" thì vô hiệu hóa chức năng scroll ngang
+                deactivateHorizontalScroll();
+                // Đặt cờ chưa kích hoạt chức năng scroll ngang
+                horizontalScrollActivated = false;
+            }
+        });
+
+        // Hàm kích hoạt chức năng scroll ngang
+        function activateHorizontalScroll() {
+            // Tìm các phần tử có class "outer-wrapper" và thêm class "scroll-enabled" để kích hoạt scroll ngang
+            var outerWrappers = document.querySelectorAll(".outer-wrapper");
+            outerWrappers.forEach(function (wrapper) {
+                wrapper.classList.add("scroll-enabled");
+            });
+        }
+
+
+
+        // Hàm vô hiệu hóa chức năng scroll ngang
+        function deactivateHorizontalScroll() {
+            // Tìm các phần tử có class "outer-wrapper" và loại bỏ class "scroll-enabled" để vô hiệu hóa scroll ngang
+            var outerWrappers = document.querySelectorAll(".outer-wrapper");
+            outerWrappers.forEach(function (wrapper) {
+                wrapper.classList.remove("scroll-enabled");
+            });
+        }
+    });
+
+
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        }
+
+        else {
+            header.classList.remove('scrolled');
+        }
+    })
+
+    let menu = document.querySelector('#menu-btn');
+
+    /* start ourroom animation*/
+
+    let slider = document.querySelector('.sliders .list');
+    let items = document.querySelectorAll('.sliders .list .items');
+    let next = document.getElementById('next');
+    let prev = document.getElementById('prev');
+    let dots = document.querySelectorAll('.sliders .dots li');
+
+    let lengthItems = items.length - 1;
+    let active = 0;
+    next.onclick = function () {
+        active = active + 1 <= lengthItems ? active + 1 : 0;
+        reloadSlider();
+    }
+    prev.onclick = function () {
+        active = active - 1 >= 0 ? active - 1 : lengthItems;
+        reloadSlider();
+    }
+
+
+    function reloadSlider() {
+        slider.style.left = -items[active].offsetLeft + 'px';
+        //
+        let last_active_dot = document.querySelector('.sliders .dots li.active');
+        last_active_dot.classList.remove('active');
+        dots[active].classList.add('active');
+
+        clearInterval(refreshInterval);
+        refreshInterval = setInterval(() => { next.click() }, 100000);
+
+
+    }
+
+    dots.forEach((li, key) => {
+        li.addEventListener('click', () => {
+            active = key;
+            reloadSlider();
+        })
+    })
+    window.onresize = function (event) {
+        reloadSlider();
+    };
+
+    /* end ourroom animation */
+
+
+    // không đụng bên dưới
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Lấy phần tử "abc"
+        var abcSection = document.querySelector(".abc");
+        // Lấy khoảng cách từ đầu trang đến phần tử "abc"
+        var abcOffsetTop = abcSection.offsetTop;
+        // Biến kiểm tra xem chức năng scroll ngang đã được kích hoạt chưa
+        var horizontalScrollActivated = false;
+
+        // Thêm sự kiện scroll
+        window.addEventListener("scroll", function () {
+            // Lấy vị trí hiện tại của thanh cuộn
+            var scrollPosition = window.scrollY || window.pageYOffset;
+
+            // Kiểm tra nếu scroll đến phần tử "abc"
+            if (scrollPosition >= abcOffsetTop && !horizontalScrollActivated) {
+                // Kích hoạt chức năng scroll ngang
+                activateHorizontalScroll();
+                // Đặt cờ đã kích hoạt chức năng scroll ngang
+                horizontalScrollActivated = true;
+            } else if (scrollPosition < abcOffsetTop && horizontalScrollActivated) {
+                // Nếu scroll lên trên phần tử "abc" thì vô hiệu hóa chức năng scroll ngang
+                deactivateHorizontalScroll();
+                // Đặt cờ chưa kích hoạt chức năng scroll ngang
+                horizontalScrollActivated = false;
+            }
+        });
+
+        // Hàm kích hoạt chức năng scroll ngang
+        function activateHorizontalScroll() {
+            // Tìm các phần tử có class "outer-wrapper" và thêm class "scroll-enabled" để kích hoạt scroll ngang
+            var outerWrappers = document.querySelectorAll(".outer-wrapper");
+            outerWrappers.forEach(function (wrapper) {
+                wrapper.classList.add("scroll-enabled");
+            });
+        }
+
+
+
+        // Hàm vô hiệu hóa chức năng scroll ngang
+        function deactivateHorizontalScroll() {
+            // Tìm các phần tử có class "outer-wrapper" và loại bỏ class "scroll-enabled" để vô hiệu hóa scroll ngang
+            var outerWrappers = document.querySelectorAll(".outer-wrapper");
+            outerWrappers.forEach(function (wrapper) {
+                wrapper.classList.remove("scroll-enabled");
+            });
+        }
+    });
+
+
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        }
+
+        else {
+            header.classList.remove('scrolled');
+        }
+    })
+</script>
+<style>
+
+</style>
