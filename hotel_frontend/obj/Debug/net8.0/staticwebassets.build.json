@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "weUdscG+4zLFWUu2oVzjlAEUYYmqc2sUQHD6KhFww0Y=",
+  "Hash": "swqx37uW6WRBQBRGZlTGbeYH5qh1ifrHLo2LowzY6oI=",
   "Source": "hotel_frontend",
   "BasePath": "_content/hotel_frontend",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\hotel_frontend\\hotel_frontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\hotel_frontend.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\book_page.css",
+      "SourceId": "hotel_frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\",
+      "BasePath": "_content/hotel_frontend",
+      "RelativePath": "css/book_page.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\book_page.css"
     },
     {
       "Identity": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\Font\\HVMuse-Italic.woff",
@@ -2276,6 +2295,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\js\\book_page.js",
+      "SourceId": "hotel_frontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\",
+      "BasePath": "_content/hotel_frontend",
+      "RelativePath": "js/book_page.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\book_page.js"
     },
     {
       "Identity": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\js\\script.js",

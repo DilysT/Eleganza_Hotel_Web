@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\Font\\HVMuse-Regular.woff2"
     },
     {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\book_page.css",
+      "PackagePath": "staticwebassets\\css\\book_page.css"
+    },
+    {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\image\\Bar & Champagne.png",
       "PackagePath": "staticwebassets\\css\\image\\Bar & Champagne.png"
     },
@@ -471,6 +475,10 @@
     {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\js\\book_page.js",
+      "PackagePath": "staticwebassets\\js\\book_page.js"
     },
     {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\js\\script.js",

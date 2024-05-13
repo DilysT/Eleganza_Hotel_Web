@@ -1,0 +1,71 @@
+﻿<head>
+	<link href="~/css/book_page.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+</head>
+<script src="~/js/book_page.js"></script>
+<header class="header">
+    <div class="logo">
+        <a href="#home"><img src="~/css/image_accomodation/eleganza_scroll.svg" alt=""></a>
+    </div>
+
+    <div class="general">
+        <a href="#home">Accommodation</a>
+        <a href="#room">Services</a>
+        <a href="#gallery">Promotion</a>
+    </div>
+    <button class="butt">
+        <a class="btn">BOOK NOW</a>
+    </button>
+
+</header>
+<!-- end -->
+
+
+<div class='line-container'>
+    <div class='progress-line'>
+        <div class='progress'></div>
+        <div class='status'>
+            <div class='dot completed'><span>1</span></div>
+            <span style="display: block; text-align:right; margin-left: -30px; margin-top: 3px;">Choose room</span>
+        </div>
+        <div class='status'>
+            <div class='dot_2'><span class="dot_2_1">2</span></div>
+            <span style="display: block; text-align: center; margin-left: 15px; margin-top: 3px;">Fill your personal info</span>
+        </div>
+        <div class='status'>
+            <div class='dot_3'><span class="dot_3_1">3</span></div>
+            <span style="display: flex; text-align:right; margin-right: -50px; margin-top: 3px;">Complete Payment</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="label-container">
+    <label class="text_calen">Choose date</label>
+    <label class="text_calen2">Choose guest</label>
+    <div class="inner-container">
+        <div class="input-group">
+            <input type="text" name="daterange" readonly maxlength="17" />
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleRotate()">1 guest</button>
+                <div class="dropdown-content">
+                    <a class="hi" data-value="1">1 guest</a>
+                    <a data-value="2">2 guests</a>
+                    <a data-value="3">3 guests</a>
+                    <a data-value="4">4 guests</a>
+                    <a data-value="5">5 guests</a>
+                    <a data-value="6">6 guests</a>
+                </div>
+            </div>
+            <button class="thien">Check Availability</button>
+        </div>
+    </div>
+</div>
+<p class="regret">
+    We regret to inform you that there are no available rooms for the chosen date and time.
+    <br>Please consider selecting a different date or reaching out to us for additional details.
+</p>
+
