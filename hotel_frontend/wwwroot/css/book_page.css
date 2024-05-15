@@ -766,3 +766,17 @@ color: white !important;
 .drp-calendar.left td.off.ends.in-range.available:hover {
   display: none;
 }
+
+
+.invalid-date {
+    position: relative;
+    color: red;
+}
+.invalid-date:after {
+        content: 'X';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: red;
+    }

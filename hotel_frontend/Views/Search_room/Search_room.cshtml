@@ -1,11 +1,15 @@
-﻿<head>
-	<link href="~/css/book_page.css" rel="stylesheet" />
+﻿
+<head>
+    
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link href="~/css/book_page.css" rel="stylesheet" />
+
 </head>
-<script src="~/js/book_page.js"></script>
+
+
 <header class="header">
     <div class="logo">
         <a href="#home"><img src="~/css/image_accomodation/eleganza_scroll.svg" alt=""></a>
@@ -19,10 +23,8 @@
     <button class="butt">
         <a class="btn">BOOK NOW</a>
     </button>
-
 </header>
 <!-- end -->
-
 
 <div class='line-container'>
     <div class='progress-line'>
@@ -42,7 +44,6 @@
     </div>
 </div>
 
-
 <div class="label-container">
     <label class="text_calen">Choose date</label>
     <label class="text_calen2">Choose guest</label>
@@ -59,8 +60,9 @@
                     <a data-value="5">5 guests</a>
                     <a data-value="6">6 guests</a>
                 </div>
+               
             </div>
-            <button class="thien">Check Availability</button>
+            <button class="thien" id="checkButton">Check Availability</button>
         </div>
     </div>
 </div>
@@ -68,4 +70,95 @@
     We regret to inform you that there are no available rooms for the chosen date and time.
     <br>Please consider selecting a different date or reaching out to us for additional details.
 </p>
+
+<style>
+    .invalid-date {
+        position: relative;
+        color: red;
+    }
+
+        .invalid-date:after {
+            content: 'X';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: red;
+        }
+</style>
+<!-- Không thể nối file .js vào html được (*ko đc để cùng lúc script "html+js") -->
+<script>
+
+    $(document).ready(function () {
+        $(function () {
+            // Tính toán ngày hiện tại và ngày hôm sau
+            var currentDate = new Date(); // Lấy ngày hiện tại
+            var tomorrowDate = new Date(currentDate); // Sao chép ngày hiện tại
+            tomorrowDate.setDate(tomorrowDate.getDate() + 1); // Thêm 1 ngày để có ngày hôm sau
+
+            // Format ngày hiện tại và ngày hôm sau thành chuỗi 'ddd, D MMM'
+            var startDate = currentDate.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' });
+            var endDate = tomorrowDate.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' });
+
+            // Thiết lập ngày bắt đầu và ngày kết thúc cho ô input
+            $('input[name="daterange"]').daterangepicker({
+                "startDate": startDate,
+                "endDate": endDate,
+                opens: 'center',
+                locale: {
+                    format: 'ddd, D MMMM'
+                },
+                isInvalidDate: function (date) {
+                    // Check if the date is the 1st or 15th of May
+                    if ((date.date() === 18 || date.date() === 19) && date.month() === 5) { // Note: month() returns 0-based month (0 for January, 4 for May)
+                        return true;
+                    }
+                    // Otherwise, return false (selectable)
+                    return false;
+                },
+                isCustomDate: function (date) {
+                    // Check if the date is the 1st or 15th of May
+                    if ((date.date() === 18 || date.date() === 19) && date.month() === 5) // tháng cộng thêm 1 ngày
+                    {
+                        return 'invalid-date';
+                    }
+                    return '';
+                }
+            });
+
+            // Xử lý sự kiện khi ngày thay đổi
+            $('input[name="daterange"]').on('apply.daterangepicker', function (ev, picker) {
+                var startDate = picker.startDate.format('ddd, D MMM');
+                var endDate = picker.endDate.format('ddd, D MMM');
+                $(this).val(startDate + ' \u2192 ' + endDate);
+            });
+
+            // Thiết lập giá trị ban đầu cho ô input
+            $('input[name="daterange"]').val(startDate + ' \u2192 ' + endDate);
+        });
+    });
+
+
+/* Toggle drop down */
+const dropdown = document.querySelector('.dropdown');
+    const dropBtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    // Xử lý sự kiện khi click vào dropBtn
+    dropBtn.addEventListener('click', () => {
+        dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        dropBtn.classList.toggle('rotate'); // Thêm hoặc xóa lớp 'rotate' khi click
+    });
+
+    // Xử lý sự kiện khi click vào một phần tử trong dropdown
+    dropdown.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+            const guestValue = event.target.dataset.value;
+            dropBtn.textContent = `${guestValue} ${guestValue == 1 ? 'guest' : 'guests'}`;
+            dropdownContent.style.display = 'none';
+            dropBtn.classList.remove('rotate'); // Xóa lớp 'rotate' sau khi chọn xong
+        }
+    });
+</script>
+
 
