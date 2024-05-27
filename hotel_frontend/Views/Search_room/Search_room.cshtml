@@ -5,7 +5,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link href="~/css/book_page.css" rel="stylesheet" />
+	<link href="~/css/bookpage.css" rel="stylesheet" />
 
 </head>
 
@@ -21,7 +21,7 @@
         <a href="#gallery">Promotion</a>
     </div>
     <button class="butt">
-        <a class="btn">BOOK NOW</a>
+        <a onclick="window.location.href='/Search_room/Search_room'" class="btn">BOOK NOW</a>
     </button>
 </header>
 <!-- end -->
@@ -66,10 +66,303 @@
         </div>
     </div>
 </div>
-<p class="regret">
-    We regret to inform you that there are no available rooms for the chosen date and time.
-    <br>Please consider selecting a different date or reaching out to us for additional details.
-</p>
+<!-- end -->
+
+<div class="parent">
+
+    <div class="container">
+        <div class="card">
+            <div class="image-slider">
+                <img src="image/Bar & Champagne.png" alt="Room Image 1" class="active">
+                <img src="image/Friend invention.jpeg" alt="Room Image 2">
+                <img src="image/Double urban loft.jpeg" alt="Room Image 3">
+                <img src="image/Unique junior loft suite.jpeg" alt="Room Image 4">
+                <img src="image/Early booking.jpg" alt="Room Image 5">
+                <img src="image/Hero banner.png" alt="Room Image 6">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="text-content">
+                <h2>Double Urban</h2>
+                <p class="second_line">
+                <p class="second_line">
+                    <img class="people_icon" src="Icon/people_icon.png" alt=""> 2 people
+                    <img class="bed_icon" src="Icon/bed_icon.png" alt=""> 1 king bed
+                    <span class="aircon-icon"></span> 1 air-conditioner
+                </p>
+
+                </p>
+                <p class="detail">Relax in our cozy 20-square-meter room with dream-worthy pillows. Refresh in the spacious bathroom with a captivating mirror. Enjoy drinks at Bar & Champagne before dinner.</p>
+                <a href="#" class="see-more">See more</a>
+                <hr>
+
+                <p class="flexible">
+                    Flexible cancellation policy
+                    <i class="fa fa-exclamation-circle tooltip-icon" style="font-size:18px; color:rgba(20, 83, 207, 1);cursor: pointer;"></i>
+                    <div class="tooltip-text">
+                        <b> Cancellation: </b> canceled or modified in 24 hours <br>before check-in, no cancellation fee will be charged. <br>If canceled or modified after 24 hours after check-in, <br>or in case of no-show, the full amount of the <br>reservation must be paid. <br>
+
+                        <b>  Payment: </b> Full payment of the reservation is <br>required.<br>
+
+                        <b> Breakfast:</b> Free breakfast is included.<br>
+                        <b> Check-in: </b>Check-in time is 2:00 PM.<br>
+                        <b> Check-out: </b>Check-out time is 12:00 PM.
+                    </div>
+                </p>
+
+
+                <p class="free_breakfast">Free breakfast<img src="Icon/food.svg" alt=""></p>
+                <p class="dollar">$89 / 1 night</p>
+            </div>
+            <button id="reserve-button" class="reserve-btn">Reserve</button>
+        </div>
+        <!-- Repeat the above card for other room types 2    -->
+        <div class="card">
+            <div class="image-slider">
+                <img src="image/Bar & Champagne.png" alt="Room Image 1" class="active">
+                <img src="image/Friend invention.jpeg" alt="Room Image 2">
+                <img src="image/Double urban loft.jpeg" alt="Room Image 3">
+                <img src="image/Unique junior loft suite.jpeg" alt="Room Image 4">
+                <img src="image/Early booking.jpg" alt="Room Image 5">
+                <img src="image/Hero banner.png" alt="Room Image 6">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="text-content">
+                <h2>Double Urban Loft</h2>
+                <p class="second_line">
+                <p class="second_line">
+                    <img class="people_icon" src="Icon/people_icon.png" alt=""> 4 people
+                    <img class="bed_icon" src="Icon/bed_icon.png" alt=""> 1 king bed
+                    <span class="aircon-icon"></span> 1 air-conditioner
+                </p>
+
+                </p>
+                <p class="detail">In our snug 20-square-meter room with a terrace, Marqués de San Esteban looks small from the rooftop, with cars like fireflies below. The sea peeks over nearby rooftops. Let's stay longer; no rush for the shower and robe.</p>
+                <a href="#" class="see-more">See more</a>
+                <hr>
+
+                <p class="flexible">
+                    Flexible cancellation policy
+                    <i class="fa fa-exclamation-circle tooltip-icon" style="font-size:18px; color:rgba(20, 83, 207, 1);cursor: pointer;"></i>
+                    <div class="tooltip-text">
+                        <b> Cancellation: </b> canceled or modified in 24 hours <br>before check-in, no cancellation fee will be charged. <br>If canceled or modified after 24 hours after check-in, <br>or in case of no-show, the full amount of the <br>reservation must be paid. <br>
+
+                        <b>  Payment: </b> Full payment of the reservation is <br>required.<br>
+
+                        <b> Breakfast:</b> Free breakfast is included.<br>
+                        <b> Check-in: </b>Check-in time is 2:00 PM.<br>
+                        <b> Check-out: </b>Check-out time is 12:00 PM.
+                    </div>
+                </p>
+
+
+                <p class="free_breakfast">Free breakfast<img src="Icon/food.svg" alt=""></p>
+                <p class="dollar">$109 / 1 night</p>
+            </div>
+            <button id="reserve-button" class="reserve-btn">Reserve</button>
+        </div>
+        <!-- Repeat the above card for other room types -->
+        <div class="card">
+            <div class="image-slider">
+                <img src="image/Bar & Champagne.png" alt="Room Image 1" class="active">
+                <img src="image/Friend invention.jpeg" alt="Room Image 2">
+                <img src="image/Double urban loft.jpeg" alt="Room Image 3">
+                <img src="image/Unique junior loft suite.jpeg" alt="Room Image 4">
+                <img src="image/Early booking.jpg" alt="Room Image 5">
+                <img src="image/Hero banner.png" alt="Room Image 6">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="text-content">
+                <h2>Unique Junior Suite</h2>
+                <p class="second_line">
+                <p class="second_line">
+                    <img class="people_icon" src="Icon/people_icon.png" alt=""> 2 people
+                    <img class="bed_icon" src="Icon/bed_icon.png" alt=""> 1 king bed
+                    <span class="aircon-icon"></span> 1 air-conditioner
+                </p>
+
+                </p>
+                <p class="detail">Relax in our cozy 20-square-meter room with dream-worthy pillows. Refresh in the spacious bathroom with a captivating mirror. Enjoy drinks at Bar & Champagne before dinner.</p>
+                <a href="#" class="see-more">See more</a>
+                <hr>
+
+                <p class="flexible">
+                    Flexible cancellation policy
+                    <i class="fa fa-exclamation-circle tooltip-icon" style="font-size:18px; color:rgba(20, 83, 207, 1);cursor: pointer;"></i>
+                    <div class="tooltip-text">
+                        <b> Cancellation: </b> canceled or modified in 24 hours <br>before check-in, no cancellation fee will be charged. <br>If canceled or modified after 24 hours after check-in, <br>or in case of no-show, the full amount of the <br>reservation must be paid. <br>
+
+                        <b>  Payment: </b> Full payment of the reservation is <br>required.<br>
+
+                        <b> Breakfast:</b> Free breakfast is included.<br>
+                        <b> Check-in: </b>Check-in time is 2:00 PM.<br>
+                        <b> Check-out: </b>Check-out time is 12:00 PM.
+                    </div>
+                </p>
+
+
+                <p class="free_breakfast">Free breakfast<img src="Icon/food.svg" alt=""></p>
+                <p class="dollar">$109 / 1 night</p>
+            </div>
+            <button id="reserve-button" class="reserve-btn">Reserve</button>
+        </div>
+        <!-- Repeat the above card for other room types -->
+        <div class="card">
+            <div class="image-slider">
+                <img src="image/Bar & Champagne.png" alt="Room Image 1" class="active">
+                <img src="image/Friend invention.jpeg" alt="Room Image 2">
+                <img src="image/Double urban loft.jpeg" alt="Room Image 3">
+                <img src="image/Unique junior loft suite.jpeg" alt="Room Image 4">
+                <img src="image/Early booking.jpg" alt="Room Image 5">
+                <img src="image/Hero banner.png" alt="Room Image 6">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="text-content">
+                <h2>Unique Junior Suite Loft</h2>
+                <p class="second_line">
+                <p class="second_line">
+                    <img class="people_icon" src="Icon/people_icon.png" alt=""> 4 people
+                    <img class="bed_icon" src="Icon/bed_icon.png" alt=""> 1 king bed
+                    <span class="aircon-icon"></span> 1 air-conditioner
+                </p>
+
+                </p>
+                <p class="detail">Relax in our cozy 20-square-meter room with dream-worthy pillows. Refresh in the spacious bathroom with a captivating mirror. Enjoy drinks at Bar & Champagne before dinner.</p>
+                <a href="#" class="see-more">See more</a>
+                <hr>
+
+                <p class="flexible">
+                    Flexible cancellation policy
+                    <i class="fa fa-exclamation-circle tooltip-icon" style="font-size:18px; color:rgba(20, 83, 207, 1);cursor: pointer;"></i>
+                    <div class="tooltip-text">
+                        <b> Cancellation: </b> canceled or modified in 24 hours <br>before check-in, no cancellation fee will be charged. <br>If canceled or modified after 24 hours after check-in, <br>or in case of no-show, the full amount of the <br>reservation must be paid. <br>
+
+                        <b>  Payment: </b> Full payment of the reservation is <br>required.<br>
+
+                        <b> Breakfast:</b> Free breakfast is included.<br>
+                        <b> Check-in: </b>Check-in time is 2:00 PM.<br>
+                        <b> Check-out: </b>Check-out time is 12:00 PM.
+                    </div>
+                </p>
+
+
+                <p class="free_breakfast">Free breakfast<img src="Icon/food.svg" alt=""></p>
+                <p class="dollar">$139 / 1 night</p>
+            </div>
+            <button class="reserve-btn">Reserve</button>
+        </div>
+        <!-- Repeat the above card for other room types -->
+
+
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span class="title">Double Urban</span>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="popup-image-slider">
+                <img src="image/Bar & Champagne.png" alt="Room Image 1" class="active">
+                <img src="image/Friend invention.jpeg" alt="Room Image 2">
+                <img src="image/Double urban loft.jpeg" alt="Room Image 3">
+                <img src="image/Unique junior loft suite.jpeg" alt="Room Image 4">
+                <img src="image/Early booking.jpg" alt="Room Image 5">
+                <img src="image/Hero banner.png" alt="Room Image 6">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+
+            <div class="popup-text-content">
+                <h2>Feature</h2>
+                <div class="feature-columns">
+                    <ul>
+                        <li><span class="bullet"></span> Furnished terrace</li>
+                        <li><span class="bullet"></span> City views</li>
+                        <li><span class="bullet"></span> Air conditioning</li>
+                        <li><span class="bullet"></span> Soundproofing</li>
+                        <li><span class="bullet"></span> Private bathroom</li>
+                        <li><span class="bullet"></span> Free WiFi</li>
+                        <li><span class="bullet"></span> TV</li>
+                        <li><span class="bullet"></span> Telephone</li>
+                        <li><span class="bullet"></span> Courtesy Nespresso coffee machine</li>
+                    </ul>
+                    <ul>
+                        <li><span class="bullet"></span> Satellite and cable channels</li>
+                        <li><span class="bullet"></span> Safe</li>
+                        <li><span class="bullet"></span> Heating</li>
+                        <li><span class="bullet"></span> Wardrobe</li>
+                        <li><span class="bullet"></span> Shower</li>
+                        <li><span class="bullet"></span> Hair drier</li>
+                        <li><span class="bullet"></span> Dressing gown</li>
+                        <li><span class="bullet"></span> Amenities</li>
+                        <li><span class="bullet"></span> Slippers</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- form thanh toán -->
+
+    <div id="no-rooms-selected" class="form">
+        <p>There are no rooms selected</p>
+        <button id="reserve-button" disabled>Book</button>
+    </div>
+
+    <div class="booking-summary">
+        <h3>Sat, 4 May - Sunday, 5 May <span>6 nights</span></h3>
+        <hr>
+        <div class="item">
+            <div class="description">
+                Double Urban<br>
+                <small>1 room, 2 people</small>
+            </div>
+            <div class="price-wrapper">
+                <div class="icon">🗑️</div>
+                <div class="price">$534</div>
+            </div>
+        </div>
+        <hr>
+        <div class="item">
+            <div class="description">
+                Double Urban Loft<br>
+                <small>1 room, 2 people</small>
+            </div>
+            <div class="price-wrapper">
+                <div class="icon">🗑️</div>
+                <div class="price">$654</div>
+            </div>
+        </div>
+        <hr>
+        <div class="item">
+            <div class="description1">
+                10% VAT
+            </div>
+            <div class="price">$118</div>
+        </div>
+        <div class="item">
+            <div class="description1">
+                Service fees
+            </div>
+            <div class="price">$20</div>
+        </div>
+        <hr>
+        <div class="total">
+            <div>Total</div>
+            <div>$1326</div>
+        </div>
+        <a href="#" class="book-button">Book</a>
+    </div>
+
+    <!-- end -->
+
+
+</div>
 
 <style>
     .invalid-date {
@@ -85,80 +378,10 @@
             transform: translate(-50%, -50%);
             color: red;
         }
+
+
+
 </style>
-<!-- Không thể nối file .js vào html được (*ko đc để cùng lúc script "html+js") -->
-<script>
 
-    $(document).ready(function () {
-        $(function () {
-            // Tính toán ngày hiện tại và ngày hôm sau
-            var currentDate = new Date(); // Lấy ngày hiện tại
-            var tomorrowDate = new Date(currentDate); // Sao chép ngày hiện tại
-            tomorrowDate.setDate(tomorrowDate.getDate() + 1); // Thêm 1 ngày để có ngày hôm sau
-
-            // Format ngày hiện tại và ngày hôm sau thành chuỗi 'ddd, D MMM'
-            var startDate = currentDate.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' });
-            var endDate = tomorrowDate.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' });
-
-            // Thiết lập ngày bắt đầu và ngày kết thúc cho ô input
-            $('input[name="daterange"]').daterangepicker({
-                "startDate": startDate,
-                "endDate": endDate,
-                opens: 'center',
-                locale: {
-                    format: 'ddd, D MMMM'
-                },
-                isInvalidDate: function (date) {
-                    // Check if the date is the 1st or 15th of May
-                    if ((date.date() === 18 || date.date() === 19) && date.month() === 5) { // Note: month() returns 0-based month (0 for January, 4 for May)
-                        return true;
-                    }
-                    // Otherwise, return false (selectable)
-                    return false;
-                },
-                isCustomDate: function (date) {
-                    // Check if the date is the 1st or 15th of May
-                    if ((date.date() === 18 || date.date() === 19) && date.month() === 5) // tháng cộng thêm 1 ngày
-                    {
-                        return 'invalid-date';
-                    }
-                    return '';
-                }
-            });
-
-            // Xử lý sự kiện khi ngày thay đổi
-            $('input[name="daterange"]').on('apply.daterangepicker', function (ev, picker) {
-                var startDate = picker.startDate.format('ddd, D MMM');
-                var endDate = picker.endDate.format('ddd, D MMM');
-                $(this).val(startDate + ' \u2192 ' + endDate);
-            });
-
-            // Thiết lập giá trị ban đầu cho ô input
-            $('input[name="daterange"]').val(startDate + ' \u2192 ' + endDate);
-        });
-    });
-
-
-/* Toggle drop down */
-const dropdown = document.querySelector('.dropdown');
-    const dropBtn = document.querySelector('.dropbtn');
-    const dropdownContent = document.querySelector('.dropdown-content');
-
-    // Xử lý sự kiện khi click vào dropBtn
-    dropBtn.addEventListener('click', () => {
-        dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
-        dropBtn.classList.toggle('rotate'); // Thêm hoặc xóa lớp 'rotate' khi click
-    });
-
-    // Xử lý sự kiện khi click vào một phần tử trong dropdown
-    dropdown.addEventListener('click', (event) => {
-        if (event.target.tagName === 'A') {
-            const guestValue = event.target.dataset.value;
-            dropBtn.textContent = `${guestValue} ${guestValue == 1 ? 'guest' : 'guests'}`;
-            dropdownContent.style.display = 'none';
-            dropBtn.classList.remove('rotate'); // Xóa lớp 'rotate' sau khi chọn xong
-        }
-    });
-</script>
-
+<script src="~/js/bookpage.js"></script>
 

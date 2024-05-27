@@ -46,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/hotel_frontend/hotel_frontend/Views/personal_info/personal_info.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccGVyc29uYWxfaW5mb1xwZXJzb25hbF9pbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/hotel_frontend/hotel_frontend/Views/Search_room/Search_room.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoX3Jvb21cU2VhcmNoX3Jvb20uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
