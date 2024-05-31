@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\Font\\HVMuse-Regular.woff2"
     },
     {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\Payment_detail.css",
+      "PackagePath": "staticwebassets\\css\\Payment_detail.css"
+    },
+    {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\bookpage.css",
       "PackagePath": "staticwebassets\\css\\bookpage.css"
     },
@@ -465,8 +469,8 @@
       "PackagePath": "staticwebassets\\css\\img_accom_detail\\urban_double.jpeg"
     },
     {
-      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\personalinfo.css",
-      "PackagePath": "staticwebassets\\css\\personalinfo.css"
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\personal_info.css",
+      "PackagePath": "staticwebassets\\css\\personal_info.css"
     },
     {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\style.css",
@@ -477,8 +481,20 @@
       "PackagePath": "staticwebassets\\css\\style_accom_detail1.css"
     },
     {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\visa_mastercard\\mastercard.svg",
+      "PackagePath": "staticwebassets\\css\\visa_mastercard\\mastercard.svg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\visa_mastercard\\visa.svg",
+      "PackagePath": "staticwebassets\\css\\visa_mastercard\\visa.svg"
+    },
+    {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\js\\Payment_detail.js",
+      "PackagePath": "staticwebassets\\js\\Payment_detail.js"
     },
     {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\js\\bookpage.js",

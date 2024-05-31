@@ -1,0 +1,202 @@
+﻿
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment_detail</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<link href="~/css/payment_detail.css" rel="stylesheet" />
+
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+ <!-- header -->
+<header class="header">
+    <div class="logo">
+        <a href="#home"><img src="~/css/image/eleganza_scroll.svg" alt=""></a>
+    </div>
+    <div class="general">
+        <a href="#home">Accommodation</a>
+        <a href="#room">Services</a>
+        <a href="#gallery">Promotion</a>
+    </div>
+    <button class="butt">
+        <a class="btn">BOOK NOW</a>
+    </button>
+</header>
+<!-- end -->
+
+<div class='line-container'>
+    <div class='progress-line'>
+        <div class='progress'></div>
+        <div class='status'>
+            <div class='dot completed'></div>
+            <span style="display: block; text-align:right; margin-left: -30px; margin-top: 3px;">Choose room</span>
+        </div>
+        <div class='status'>
+            <div class='dot_2'><span class="dot_2_1"></span></div>
+            <span style="display: block; text-align: center; margin-left: 15px; margin-top: 3px;">Fill your personal info</span>
+        </div>
+        <div class='status'>
+            <div class='dot_3'><span class="dot_3_1">3</span></div>
+            <span style="display: flex; text-align:right; margin-right: -50px; margin-top: 3px;">Complete Payment</span>
+        </div>
+    </div>
+</div>
+
+<div class="parent">
+    <form id="personal-details-form">
+        <div class="personal_detail">
+            <h2>Your payment details</h2>
+            <div class="underline"></div>
+            <img class="visa" src="~/css/visa_mastercard/visa.svg" alt="">
+            <img class="mastercard" src="~/css/visa_mastercard/mastercard.svg" alt="">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">Full name</label>
+                    <input placeholder="Enter name on card" class="first_name" type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name</label>
+                    <input placeholder="XXXX - XXXX - XXXX - XXXX" class="first_name" type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Expiration date</label>
+                    <input placeholder="MM/YY" class="first_name" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-email">CVC</label>
+                    <input placeholder="***" class="first_name" id="confirm-email" name="confirm-email" required>
+                    <span id="email-error" class="error-message">The value is invalid</span>
+                </div>
+            </div>
+        </div>
+        <label class="container">
+            <div class="custom-checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </div>
+            I accept&nbsp;<a href="https://www.timetostay.fi/general-conditions-for-reservations-and-cancellations-and-rules-and-regulations/?lang=en" target="_blank">reservation conditions</a> &nbsp;and&nbsp;
+            <a href="https://www.lawdonut.co.uk/business/sector-specific-law/hotel-legal-issues" target="_blank"> legal conditions</a>.
+        </label>
+        <div class="form-buttons">
+            <button class="back_button" type="button" onclick="history.back()">Back</button>
+            <button class="continue_button" type="submit" disabled>Continue</button>
+        </div>
+    </form>
+    <div class="booking-summary">
+        <h3>Sat, 4 May - Sunday, 5 May <span>6 nights</span></h3>
+        <hr>
+        <div class="item">
+            <div class="description">
+                Double Urban<br>
+                <small>1 room, 2 people</small>
+            </div>
+            <div class="price-wrapper">
+                <div class="icon">🗑️</div>
+                <div class="price">$534</div>
+            </div>
+        </div>
+        <hr>
+        <div class="item">
+            <div class="description">
+                Double Urban Loft<br>
+                <small>1 room, 2 people</small>
+            </div>
+            <div class="price-wrapper">
+                <div class="icon">🗑️</div>
+                <div class="price">$654</div>
+            </div>
+        </div>
+        <hr>
+        <div class="item">
+            <div class="description1">
+                10% VAT
+            </div>
+            <div class="price">$118</div>
+        </div>
+        <div class="item">
+            <div class="description1">
+                Service fees
+            </div>
+            <div class="price">$20</div>
+        </div>
+        <hr>
+        <div class="total">
+            <div>Total</div>
+            <div>$1326</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Success form hiện ta khi nhấn button continue -->
+
+<div class="overlay" id="thank-you-overlay">
+    <div class="thank-you-popup">
+        <div class="checkmark-circle">
+            <i class="fas fa-check"></i>
+        </div>
+        <h2>Thank For Your Booking!</h2>
+        <p>We have sent an invoice to nguyensithi07@gmail.com for <br>your reference. Additionally, you can download the  <br> invoice directly from this page.</p>
+        <button class="book_more">Book more rooms</button>
+        <button class="view_details">View my booking details</button>
+    </div>
+</div>
+<!-- end -->
+
+
+
+<script src="~/js/payment_detail.js"></script>
+<script>
+    // Get all input fields
+    const inputFields = document.querySelectorAll('input[type="text"], input[type="email"]');
+    // Get the checkbox
+    const checkbox = document.querySelector('input[type="checkbox"]');
+    // Get the continue button
+    const continueButton = document.querySelector('.continue_button');
+
+    // Add event listener to all input fields and the checkbox
+    inputFields.forEach(input => {
+        input.addEventListener('input', checkForm);
+    });
+    checkbox.addEventListener('change', checkForm);
+
+    function checkForm() {
+        // Check if all input fields are filled and the checkbox is checked
+        const allFilled = Array.from(inputFields).every(input => input.value !== '');
+        const checkboxChecked = checkbox.checked;
+
+        if (allFilled && checkboxChecked) {
+            // If all conditions are met, enable the continue button
+            continueButton.disabled = false;
+        } else {
+            // Otherwise, disable the continue button
+            continueButton.disabled = true;
+        }
+    }
+
+    // Call checkForm at the start to set the initial state of the continue button
+    checkForm();
+
+    // Handle form submission
+    document.getElementById('personal-details-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        document.getElementById('thank-you-overlay').style.display = 'flex';
+    });
+
+    function bookMoreRooms() {
+        window.location.href = '/booking-page-url'; // Replace with actual booking page URL
+    }
+
+    function viewBookingDetails() {
+        window.location.href = '/booking-details-url'; // Replace with actual booking details URL
+    }
+</script>
