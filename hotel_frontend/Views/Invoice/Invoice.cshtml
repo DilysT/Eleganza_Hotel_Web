@@ -1,0 +1,281 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+            text-align: center;
+            color: #777;
+            margin: 0;
+            padding: 0;
+        }
+
+        .invoice-box {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+            color: #555;
+        }
+
+        .invoice-box table {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        .invoice-box table td {
+            padding: 5px;
+            vertical-align: top;
+        }
+
+        .invoice-box table tr td:nth-child(2),
+        .invoice-box table tr td:nth-child(3),
+        .invoice-box table tr td:nth-child(4),
+        .invoice-box table tr td:nth-child(5),
+        .invoice-box table tr td:nth-child(6) {
+            text-align: right;
+            color: black;
+        }
+
+        .invoice-box table tr.top table td {
+            padding-bottom: 20px;
+        }
+
+        .invoice-box table tr.top table td.title {
+            font-size: 45px;
+            line-height: 45px;
+            color: #333;
+        }
+
+        .invoice-box table tr.information table td {
+            padding-bottom: 70px;
+            color: black;
+        }
+
+        .invoice-box table tr.heading td {
+            background: rgba(170, 131, 83, 1);
+            color: white;
+            font-weight: 100;
+            text-align: left;
+            padding-left: 35px;
+        }
+
+        .invoice-box table tr.heading td:nth-child(2),
+        .invoice-box table tr.heading td:nth-child(3),
+        .invoice-box table tr.heading td:nth-child(4),
+        .invoice-box table tr.heading td:nth-child(5),
+        .invoice-box table tr.heading td:nth-child(6) {
+            text-align: right;
+        }
+
+        .invoice-box table tr.item td {
+            padding-left: 35px;
+        }
+
+        .invoice-box table tr.item td:nth-child(2),
+        .invoice-box table tr.item td:nth-child(3),
+        .invoice-box table tr.item td:nth-child(4),
+        .invoice-box table tr.item td:nth-child(5),
+        .invoice-box table tr.item td:nth-child(6) {
+            text-align: right;
+        }
+
+        .invoice-box table tr.item.last td {
+            border-bottom: none;
+            padding-bottom: 50px;
+        }
+
+        .invoice-box table tr.total td {
+            text-align: right;
+            
+        }
+
+        .invoice-box table tr.total td:nth-child(2) {
+            margin-top: 100px;
+        }
+
+        .invoice-box table tr.total.bold td {
+            font-weight: bold;
+        }
+
+        .invoice-info h1 {
+            margin-top: 10px;
+            font-size: 35px;
+            color: black;
+        }
+
+        .invoice-info p {
+            margin: 0;
+            color: black;
+        }
+
+        .label {
+            color: #777;
+        }
+
+        .content {
+            margin-left: 97px;
+        }
+
+        .content1 {
+            margin-left: 15px;
+        }
+
+        .content2 {
+            margin-left: 68px;
+        }
+
+        .from {
+            font-weight: 700;
+            font-size: 20px;
+            color: black;
+        }
+
+        .signature {
+            text-align: right;
+            padding-top: 100px;
+            padding-bottom: 20px;
+        }
+
+        .subtotal {
+            margin-left: 25px;
+        }
+
+        .description-col {
+            padding-left: 15px;
+            width: 200px; /* Ensure this column has enough space */
+        }
+
+        .rate-col {
+            width: 100px;
+            text-align: right;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="6">
+                    <table>
+                        <tr>
+                            <td class="title">
+								
+                                <img src="~/css/invoice_image/eleganza.png" alt="Eleganza Logo" style="width:100%; max-width:150px;">
+                            </td>
+                            <td class="invoice-info">
+                                <h1>Hotel Invoice</h1>
+                                <p><span class="label">Invoice no:</span><span class="content">001 </span></p>
+                                <p><span class="label">Invoice date:</span><span class="content1">Sat 4th, 2024</span></p>
+                                <p><span class="label">Due:</span><span class="content2">Sun 5th, 2024 </span> </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr class="information">
+                <td colspan="6">
+                    <table>
+                        <tr>
+                            <td>
+                                <p class="from">From<br>
+                                    Nguyen Si Thi<br></p>
+                                nguyensithi07@gmail.com<br>
+                                0788576142<br>
+                                10 Vo Thi Sau, Ho Chi Minh, Vietnam
+                            </td>
+                            <td>
+                                <p class="from">To<br>
+                                    Eleganza Hotel<br> </p>
+                                eleganzahotel@gmail.com<br>
+                                0987654321<br>
+                                Marqués de San Esteban, 27 - 33206 Gijón
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr class="heading">
+                <td class="description-col">Description</td>
+                <td class="rate-col">Rate, USD</td>
+                <td>QTY</td>
+                <td>Tax</td>
+                <td>Disc</td>
+                <td>Amount, USD</td>
+            </tr>
+
+            <tr class="item">
+                <td class="description-col">Double Urban</td>
+                <td class="rate-col">534</td>
+                <td>1</td>
+                <td>10%</td>
+                <td>0%</td>
+                <td>587.4</td>
+            </tr>
+            <tr class="item">
+                <td class="description-col">Double Urban Loft</td>
+                <td class="rate-col">654</td>
+                <td>1</td>
+                <td>10%</td>
+                <td>0%</td>
+                <td>719.4</td>
+            </tr>
+            <tr class="item">
+                <td class="description-col">Bar Champaign</td>
+                <td class="rate-col">30</td>
+                <td>1</td>
+                <td>10%</td>
+                <td>0%</td>
+                <td>33</td>
+            </tr>
+            <tr class="item last">
+                <td class="description-col">Service fees</td>
+                <td class="rate-col">20</td>
+                <td>1</td>
+                <td>0%</td>
+                <td>0%</td>
+                <td>22</td>
+            </tr>
+
+            <tr class="total">
+                <td colspan="4"></td>
+                <td>Subtotal:</td>
+                <td>USD 1,361.8</td>
+            </tr>
+            <tr class="total">
+                <td colspan="4"></td>
+                <td>Discount:</td>
+                <td>USD 0.00</td>
+            </tr>
+            <tr class="total">
+                <td colspan="4"></td>
+                <td>Sale Tax:</td>
+                <td>USD 123.8</td>
+            </tr>
+            <tr class="total bold">
+                <td colspan="4"></td>
+                <td>Total:</td>
+                <td>USD 1,361.8</td>
+            </tr>
+        </table>
+        <div class="signature">
+            <img src="~/css/invoice_image/Sign.png" alt="Signature">
+        </div>
+    </div>
+</body>
+</html>

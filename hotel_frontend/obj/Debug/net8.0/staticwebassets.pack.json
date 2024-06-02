@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\hotel_frontend.bundle.scp.css"
     },
     {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\Complete_pay4_4.css",
+      "PackagePath": "staticwebassets\\css\\Complete_pay4_4.css"
+    },
+    {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\Font\\HVMuse-Italic.woff",
       "PackagePath": "staticwebassets\\css\\Font\\HVMuse-Italic.woff"
     },
@@ -467,6 +471,14 @@
     {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\img_accom_detail\\urban_double.jpeg",
       "PackagePath": "staticwebassets\\css\\img_accom_detail\\urban_double.jpeg"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\invoice_image\\Sign.png",
+      "PackagePath": "staticwebassets\\css\\invoice_image\\Sign.png"
+    },
+    {
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\invoice_image\\eleganza.png",
+      "PackagePath": "staticwebassets\\css\\invoice_image\\eleganza.png"
     },
     {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\personal_info.css",

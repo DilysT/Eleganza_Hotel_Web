@@ -1,0 +1,155 @@
+﻿
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete payment</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<link href="~/css/complete_pay4_4.css" rel="stylesheet" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+
+   <!-- header -->
+   <header class="header">
+       <div class="logo">
+           <a href="#home"><img src="image/eleganza_scroll.svg" alt=""></a>
+       </div> 
+       <div class ="general">
+           <a href="#home">Accommodation</a>
+           <a href="#room">Services</a>
+           <a href="#gallery">Promotion</a>
+       </div>
+       <button class="butt">
+           <a class="btn">BOOK NOW</a>
+       </button>
+   </header>
+   <!-- end -->
+   
+   <div class='line-container'>
+       <div class='progress-line'>
+           <div class='progress'></div>
+           <div class='status'>
+               <div class='dot completed'></div>   
+               <span style="display: block; text-align:right; margin-left: -30px; margin-top: 3px;">Choose room</span>
+           </div>
+           <div class='status'>
+               <div class='dot_2'><span class="dot_2_1"></span></div>
+               <span style="display: block; text-align: center; margin-left: 15px; margin-top: 3px;">Fill your personal info</span>
+           </div>
+           <div class='status'>
+               <div class='dot_3'><span class="dot_3_1">3</span></div>
+               <span style="display: flex; text-align:right; margin-right: -50px; margin-top: 3px;">Complete Payment</span>
+           </div>
+       </div>
+   </div>
+
+   <div class="parent">
+      
+    <div class="booking_container">
+        <h2>Booking details</h2>
+        <hr>
+        <div class="details">
+            <div class="row">
+                <div><span class="label">Full name</span><br><strong>Nguyen Si Thi</strong></div>
+                <div><span class="label">Check in</span><br><strong>Thur, 24 April 2024</strong></div>
+                <div><span class="label">Check out</span><br><strong>Tue, 5 May 2024</strong></div>
+            </div>
+            <div class="row">
+                <div><span class="label">Your reservation</span><br><strong>6 nights, 1 room</strong></div>
+                <div><span class="label">Phone</span><br><strong>+84 734 484 483</strong></div>
+                <div><span class="label">Email</span><br><strong>nguyensithi07@gmail.com</strong></div>
+            </div>
+            <div class="row">
+                <div><span class="label">Your address</span><br><strong>10 Vo Thi Sau</strong></div>
+                <div><span class="label">Zip/Post code</span><br><strong>234854</strong></div>
+                <div><span class="label">City</span><br><strong>Ho Chi Minh</strong></div>
+            </div>
+            <div class="row">
+                <div><span class="label">Country</span><br><strong>Vietnam</strong></div>
+                <div><span class="label">Room no</span><br><strong>DU1, DUL1</strong></div>
+                <div><span class="label">Booking ID</span><br><strong>#854323</strong></div>
+            </div>
+        </div>
+    </div>
+
+       <div class="booking-summary">
+           <h3>Sat, 4 May - Sunday, 5 May <span>6 nights</span></h3>
+           <hr>
+           <div class="item">
+               <div class="description">
+                   Double Urban<br>
+                   <small>1 room, 2 people</small>
+               </div>
+               <div class="price-wrapper">
+                   <div class="icon">🗑️</div>
+                   <div class="price">$534</div>
+               </div>
+           </div>
+           <hr>
+           <div class="item">
+               <div class="description">
+                   Double Urban Loft<br>
+                   <small>1 room, 2 people</small>
+               </div>
+               <div class="price-wrapper">
+                   <div class="icon">🗑️</div>
+                   <div class="price">$654</div>
+               </div>
+           </div>
+           <hr>
+           <div class="item">
+               <div class="description1">
+                   10% VAT
+               </div>
+               <div class="price">$118</div>
+           </div>
+           <div class="item">
+               <div class="description1">
+                   Service fees
+               </div>
+               <div class="price">$20</div>
+           </div>
+           <hr>
+           <div class="total">
+               <div>Total</div>
+               <div>$1326</div>
+           </div>
+           <button class="invoice">Download invoice</button>
+       </div>
+   </div>
+
+
+
+
+   <div class="overlay" id="thank-you-overlay">
+    <div class="thank-you-popup">
+        <div class="checkmark-circle">
+            <i class="fas fa-check"></i>
+        </div>
+        <h2>Thank For Your Booking!</h2>
+        <p>We have sent an invoice to nguyensithi07@gmail.com for <br>your reference. Additionally, you can download the  <br> invoice directly from this page.</p>
+        <button class="book_more">Book more rooms</button>
+        <button class="view_details">View my booking details</button>
+    </div>
+</div>
+ <!-- end -->
+   
+ <script>
+    // Get the overlay and the button
+    const overlay = document.querySelector('.overlay');
+    const viewDetailsButton = document.querySelector('.view_details');
+    
+    // Function to hide the overlay
+    function hideOverlay() {
+        overlay.style.display = 'none';
+    }
+    
+    // Add a click event listener to the button
+    viewDetailsButton.addEventListener('click', hideOverlay);
+    </script>
+

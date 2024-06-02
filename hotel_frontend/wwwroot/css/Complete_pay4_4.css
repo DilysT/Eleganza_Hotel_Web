@@ -1,0 +1,1074 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+@font-face {
+  font-family: 'HV_Muse';
+  src: url('Font/HVMuse-Regular.woff') format('woff'),
+      url('Font/HVMuse-Regular.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  
+}
+
+
+
+@font-face {
+  font-family: 'HVMuse';
+  src: url('Font/HVMuse-Italic.woff2') format('woff2'),
+      url('Font/HVMuse-Italic.woff') format('woff');
+  font-weight: lighter;
+  font-style: italic;
+  font-display: normal;
+}
+/* footer */
+.footer {
+  margin-top: 7%;
+  background: rgba(26, 26, 26, 1);
+  height: 100%; /* thay đổi từ 637px thành 100% */
+  position: relative;
+}
+
+.contact {
+  position: absolute;
+  top: 14%;
+  left: 40%;
+  color: rgba(211, 211, 211, 1);
+  font-size: 2.2vw; /* thay đổi từ px thành vw */
+  font-weight: 400;
+  font-family: "HV_Muse", sans-serif;
+}
+
+.phonenumber {
+  position: absolute;
+  top: 26%; /* tính toán vị trí dựa trên top của .contact */
+  left: 41%;
+  color: #fff;
+  font-size: 3.2vw; /* thay đổi từ px thành vw */
+  font-family: 'HV_Muse', sans-serif;
+}
+
+.email {
+  position: absolute;
+  color: white;
+  font-size: 1.2vw; /* thay đổi từ px thành vw */
+  border-width: 0.2vw; /* thay đổi từ px thành vw */
+  top: 42%; /* tính toán vị trí dựa trên top của .phonenumber */
+  left: 42%;
+  border-style: solid;
+  padding-top: 1vw; /* thay đổi từ px thành vw */
+  padding-bottom: 1vw;
+  padding-left:4vw;
+  padding-right: 2vw;
+  border-radius: 4vw; /* thay đổi từ px thành vw */
+  text-transform: lowercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.khung1 {
+  width: 2.5vw; /* thay đổi từ px thành vw */
+  height: 2.5vw; /* thay đổi từ px thành vw */
+  margin-left: 42.7%;
+  margin-bottom: 19.5%;
+}
+
+.mail {
+  width: 1.8vw; /* thay đổi từ px thành vw */
+  height: 1.1vw; /* thay đổi từ px thành vw */
+  margin-left: -2.42vw; /* thay đổi từ px thành vw */
+  margin-bottom: 20vw;
+  margin-top: 17.9%;
+}
+
+.address {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.Logo {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  font-size: 1.5vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.mar {
+  position: absolute;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  top: 70%;
+  left: 42%;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.calle {
+  position: absolute;
+  top:70%;
+  right: 5%;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nocopy {
+  position: absolute;
+  top:88%;
+  left: 5%;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Logo1 {
+  position: absolute;
+  top:88%;
+  left: 11%;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+.poli {
+  position: absolute;
+  top:88%;
+  left: 76%;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.term {
+  position: absolute;
+  top:88%;
+  right: 5%;
+  font-size: 1vw; /* thay đổi từ px thành vw */
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* end */
+ 
+ /*header*/
+
+ :root{
+  --primary:#09537b;
+  --secondary:#24b2ce;
+  --blackground-color:white;
+  
+}
+/*chỉnh funtion chung*/ 
+*{
+  margin: 0;
+  outline: none; border: none;
+  text-decoration: none;
+}
+
+
+html{ /*not touch*/
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--primary);
+  border-radius: .5rem;
+}
+
+
+
+.heading{
+ 
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.btn{ /*button book now*/
+  position:absolute;
+  display:inline-block;
+  justify-content: right;
+  font-size: 1.7rem;
+  cursor: pointer;
+ 
+}
+
+/* header */
+
+/* Thiết lập header */
+.header {
+  position: fixed; /* Vị trí cố định */
+  top: 0;
+  left: 0;  
+  right: 0; 
+  z-index: 1000; /* Độ sâu hiển thị */
+  background: white; /* Màu nền */
+  box-shadow: var(--box-shadow); /* Đổ bóng */
+  display: flex; /* Sắp xếp các thành phần theo hàng ngang */
+  justify-content: space-between; /* Căn chỉnh các thành phần theo khoảng cách đều nhau */
+  padding: 25px; /* Khoảng cách nội dung và mép */
+  align-items: center; /* Căn chỉnh các thành phần theo trục dọc */
+border-bottom: 1px solid black;
+transition: background-color 0.4s ease-in-out;
+
+}
+
+
+
+/* Button "Book now" */
+.header .btn {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid rgba(71, 55, 35, 1);; /* Thêm khung đen 2px */
+  padding-top: 12px; /* Thêm padding cho nút */
+ padding-bottom: 12px;
+ padding-left: 35px;
+ padding-right: 35px;
+ transition: none;
+}
+
+
+.header .butt .btn:hover{
+  background-color:rgba(170, 131, 83, 1);
+  border: 1px solid transparent;
+}
+
+
+
+.header .butt .btn:active{
+  background-color:rgba(170, 131, 83, 1);
+  
+}
+.header .butt {
+  background: var(--white); /* Màu nền */
+  
+}
+
+.header.butt .btn{
+  border-width: 10px;
+
+}
+
+/* Chữ trong navbar */
+.header  a {
+  font-size: 17px;
+  margin: 0 1rem; /* Khoảng cách giữa các từ */
+  position: relative; /* Đặt vị trí tương đối cho gạch chân */
+color:rgba(71, 55, 35, 1);
+  background-repeat: no-repeat;
+font-weight: 400;
+}
+
+
+/* Gạch chân dưới chữ */
+.header .general a::after {
+  content: ""; 
+  position: absolute; /* Đặt vị trí tuyệt đối cho gạch chân */
+  bottom: -2px; /* Điều chỉnh vị trí của gạch chân */
+  left: 0; /* Đặt gạch chân ở bên trái */
+  width: 0; /* Ẩn gạch chân ban đầu */
+  height: 2px; /* Chiều cao của gạch chân */
+  background-color:rgba(71, 55, 35, 1);
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out; /* Hiệu ứng chuyển đổi */
+}
+.header .general{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Khi hover chữ */
+.header .general a:hover::after {
+  width: 100%; /* Kéo dài gạch chân khi hover */
+  left: 0; /* Đặt lại vị trí ban đầu của gạch chân */
+}
+
+/* Khi không hover chữ */
+.header a:not(:hover)::after {
+  width: 0; /* Thu hẹp gạch chân khi không hover */
+  left: 50%; /* Đưa gạch chân về giữa */
+  
+}
+
+ /*end header*/
+
+    
+    input {
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: -80px;
+        margin-left: 20px; /*chỉnh k/c khung calendar*/
+        padding: 10px !important;
+       border: none;
+        box-sizing: border-box;
+        background-color: #fff !important;
+        color: #000 !important;
+        font-size: 16px !important;
+        letter-spacing: 1px;
+        position: relative;
+        width: 340px; /*độ rộng khung input*/ 
+        height: 48px;
+        
+    }
+    
+
+    input:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        border: 1px solid rgba(121, 93, 59, 1) !important;
+        outline-width: 0;
+        box-shadow: 0 1px 5px rgba(121, 93, 59, 1) !important;
+    } 
+    
+
+   
+    .input-group.input-daterange{
+      padding-right: 10px;
+    }
+  
+    
+        
+    /*progress line*/
+    
+    .line-container { 
+            margin-top: 25vh;
+            display: flex;
+            width: 55%;
+      margin-left: 300px;
+    
+        }
+      
+        .progress-line {
+            position: relative;
+            margin: 0 auto;
+            border-radius: 10px;
+            width: 100%;
+            background: grey;
+            height: 5px;
+            z-index: -1;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .status {
+            position: relative;
+            top: -9.5px;
+        }
+        
+        .dot {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: white;
+            border: 1.5px solid grey;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .dot.current {
+            background: white;
+            border: 1px solid black;
+        }
+        
+        .dot.completed {
+          background: black;
+          border: 1.5px solid black;
+          position: relative;
+          width: 22px; /* Adjust as needed */
+          height: 22px; /* Adjust as needed */
+          border-radius: 50%; /* This makes the div round */
+          line-height: 20px; /* This centers the tick vertically, adjust as needed */
+          text-align: center; /* This centers the tick horizontally */
+      }
+      
+      .dot.completed::after {
+          content: "✔"; /* This is the tick character */
+          color: white; /* This sets the color of the tick */
+      }
+    
+        .dot span {
+            display: block;
+            width: 100%;
+            margin-left: 8px;
+            margin-top: 2px;
+        }
+    
+        .dot:nth-child(2),
+        .dot:nth-child(3) {
+            background: grey;
+            border: 5px solid grey;
+        }
+    
+        .dot:nth-child(2) span,
+        .dot:nth-child(3) span {
+            font-size: 14px; /* Điều chỉnh kích thước chữ */
+        }
+    
+        .progress {
+            position: absolute;
+            width: 100%; /* Thay đổi độ dài thanh tiến trình tại đây */
+            height: 100%;
+            background: black;
+           
+        }
+    
+        .dot_3{
+            width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: white;
+        border: 1.5px solid black;
+        cursor: pointer;
+        position: relative;
+        margin-left: 60px;
+        font-weight: 500;
+        }
+        .dot_3 .dot_3_1{
+            display: block;
+        width: 100%;
+        margin-left: 8px;
+        margin-top: 2px;
+        }
+    
+        .dot_2{
+            width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: white;
+        border: 1.5px solid grey;
+        cursor: pointer;
+        position: relative;
+        margin-left: 70px;
+        }
+        .dot_2 .dot_2_1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: black;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%; /* This makes the div round */
+          line-height: 20px; /* This centers the tick vertically, adjust as needed */
+          text-align: center; /* This centers the tick horizontally */
+      }
+        .dot_2 .dot_2_1::after {
+          content: "✔"; /* This is the tick character */
+          color: white; /* This sets the color of the tick */
+      }
+
+
+
+
+
+
+
+        .daterangepicker .calendar-table .today.available {
+    position: relative;
+    overflow: hidden;
+}
+
+.daterangepicker .calendar-table .today.available:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid black;
+    
+}
+
+/*xóa ngày kế tiếp của tháng bản bên trái*/
+.drp-calendar.right td.off.ends.available{
+color: white !important;
+}
+
+.drp-calendar td.off.ends.available{
+  color: rgba(184, 184, 184, 1) !important;
+  }
+
+  /*xóa ngày kế tiếp của tháng bản bên trái*/
+  .drp-calendar.left td.off.ends.in-range.available {
+    color: white !important;
+}
+
+.drp-calendar.left td.off.ends.in-range.available:hover {
+  display: none;
+}
+
+
+
+/*personal form*/
+
+.personal_detail {
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Sử dụng màu viền chung */
+  margin-bottom: 20px;
+
+
+  font-family: 'Open Sans', sans-serif; /* Sử dụng font chung */
+  background-color: var(--blackground-color); /* Sử dụng biến màu nền */
+  padding: 20px;
+  border: 1px solid rgba(150, 150, 150, 1); /* Sử dụng biến màu chính */
+  box-shadow: 0 1px 5px rgba(150, 150, 150, 1) !important;
+ height: 260px;
+  max-width: 857px;
+  margin-top: 100px;
+  margin-left: 60px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px; /* Thay đổi kích thước phù hợp */
+  font-weight: 600;
+  margin-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: -5px;
+  margin-left:10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.label{
+
+font-weight: 600;
+}
+.form-group .first_name{
+  width: 397px;
+  margin-left: 10px;
+}
+.form-group textarea{ /*khung điền request*/
+    height: 96px;
+    margin: 10px;
+    width: 96%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Sử dụng màu viền chung */
+    
+}
+.form-group textarea:focus{
+-moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        border: 1px solid rgba(121, 93, 59, 1) !important;
+        outline-width: 0;
+        box-shadow: 0 1px 5px rgba(121, 93, 59, 1) !important;
+
+}
+.form-group input,
+.form-group select {
+  margin: 10px;
+  width: 96%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Sử dụng màu viền chung */
+  border-radius: 1px; /* Bo tròn viền */
+}
+
+.form-group input[type="number"] {
+  width: auto;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+
+.form-buttons {
+  display:inline-flex;
+  justify-content: space-between;
+}
+
+.error-message {
+  font-size: 14px;
+  color: red;
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .form-row {
+      flex-direction: column;
+  }
+}
+
+
+
+.personal_detail .form-group,
+.personal_detail .form-row {
+  margin-bottom: 3px;
+}
+
+.underline {
+  width: calc(96%);
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2); /* Sử dụng màu viền chung */
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: 12px;
+}
+
+
+.form-group1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+
+
+.back_button{
+  cursor: pointer;
+  background-color: white;
+  width: 150px;
+  height: 48px;
+  border: 1px solid black;
+  margin-left: 645px;
+}
+
+.back_button:hover{
+  background-color: black;
+  color: white;
+}
+
+.continue_button {
+  cursor: pointer;
+  width: 150px;
+  height: 48px;
+  background-color: rgba(170, 131, 83, 1);
+  color: white;
+  border: white;
+  margin-right: 380px;
+  margin-left: 20px;
+}
+
+.continue_button:active {
+  cursor: pointer;
+  background-color: rgba(121, 93, 59, 1);
+  color: white;
+  border: white;
+ 
+}
+
+.continue_button:disabled {
+ margin-left: 20px;
+  background-color: #e0e0e0;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  display: none;
+  margin-left: 10px;
+}
+
+
+
+.parent {
+display: flex;
+}
+
+
+
+.booking-summary {
+
+       width: 300px;
+        height: 380px;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+      margin-top: 100px;
+      margin-right: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .booking-summary h3 {
+        margin: 0;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .booking-summary h3 span {
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .booking-summary hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 20px 0;
+    }
+    .booking-summary .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .booking-summary .description {
+        flex: 1;
+        font-weight: 600;
+    }
+    .booking-summary .description1 {
+        flex: 1;
+        font-weight: 400;
+    }
+    .booking-summary .description small {
+        flex: 1;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+    }
+    .booking-summary .price {
+        flex-shrink: 0;
+        margin-left: 10px;
+    }
+    .booking-summary .icon {
+        flex-shrink: 0;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .booking-summary .price-wrapper {
+        text-align: right;
+    }
+    .booking-summary .total {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .booking-summary .book-button {
+        display: block;
+        height: 28px;
+        padding-top: 12px;
+        background-color: #a37e4c;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .booking-summary .book-button:active {
+     background-color:    rgba(121, 93, 59, 1);
+    }
+  
+    .parent {
+  display: flex;
+  }
+  
+
+  
+  #no-rooms-selected {
+  display: block;
+  text-align: center;
+  }
+  
+  #booking-summary {
+  display: none;
+  }
+
+  .visa{
+    margin-left: 10px;
+  }
+  .mastercard{
+    margin-left: 10px;
+  }
+  ::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+
+/*check-box*/
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(150, 150, 150, 1);
+  position: relative;
+  margin-right: 10px;
+  margin-left: 60px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: white;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: rgba(170, 131, 83, 1);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+label a {
+  text-decoration: underline;
+  color: black;
+}
+
+
+
+  /* Add styles for the overlay and the thank you popup */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.thank-you-popup {
+  width: 438px;
+  height: 338px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.thank-you-popup h2 {
+    margin-left: 80px;
+  margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.thank-you-popup button {
+ 
+  display: flex;
+  cursor: pointer;
+  background-color: white;
+  width: 200px;
+  height: 48px;
+  border: 1px solid black;
+}
+
+.thank-you-popup .book_more{
+  padding-top: 16px;
+  padding-left: 40px;
+  margin-top: 70px;
+  margin-left: 0px;
+  font-weight: 600;
+}
+
+.thank-you-popup .book_more:hover{
+background-color: black;
+color: white;
+  font-weight: 600;
+}
+
+.thank-you-popup .view_details{
+  padding-top: 17px;
+  padding-left: 30px;
+  margin-top: -48px;
+  margin-left: 240px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(170, 131, 83, 1);
+  border: white;
+}
+
+.thank-you-popup .view_details:active{
+ background-color: rgba(121, 93, 59, 1);
+  font-weight: 600;
+  color: white;
+  border: white;
+}
+.checkmark-circle {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 190px;
+  margin-top: 20px;
+}
+
+.fa-check:before {
+  content: "\f00c";
+  font-size: 25px;
+  
+}
+
+
+.booking_container {
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-right: 30px;
+            max-width: 800px;
+         
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin: 0;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        .details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .details .row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .details .row > div {
+            flex: 1;
+            margin-bottom: 10px;
+        }
+        .details .row > div:not(:last-child) {
+            margin-right: 20px;
+        }
+        @media (max-width: 600px) {
+            .details .row {
+                flex-direction: column;
+            }
+            .details .row > div:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        
+        .invoice{
+            cursor: pointer;
+            width: 300px;
+            height: 40px;
+            padding-top: 3px;
+            padding-left: 20px;
+            margin-top: 20px;
+            margin-left: 0px;
+            font-weight: 600;
+            color: white;
+            background-color: rgba(170, 131, 83, 1);
+            border: white;
+        }
+
+     .invoice:active{
+            background-color: rgba(121, 93, 59, 1);
+             font-weight: 600;
+             color: white;
+             border: white;
+           }
+
+
+
+
+/* khung chữ detail*/
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    .details .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .details .row > div {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+            .details .row > div:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            .details .row > div .label {
+                font-size: 14px;
+                font-weight: 400;
+                color: gray;
+            }
+
+            .details .row > div strong {
+                display: block;
+                margin-top: 4px;
+            }
+
+@media (max-width: 600px) {
+    .details .row {
+        flex-direction: column;
+    }
+
+        .details .row > div:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+}

@@ -38,12 +38,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb21fZGV0YWlsXzRcQWNjb21fZGV0YWlsXzQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/hotel_frontend/hotel_frontend/Views/Complete_pay4_4/Complete_pay4_4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxldGVfcGF5NF80XENvbXBsZXRlX3BheTRfNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/hotel_frontend/hotel_frontend/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/hotel_frontend/hotel_frontend/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/hotel_frontend/hotel_frontend/Views/Invoice/Invoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxJbnZvaWNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/hotel_frontend/hotel_frontend/Views/Payment_detail/Payment_detail.cshtml]

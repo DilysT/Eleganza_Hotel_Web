@@ -54,8 +54,8 @@
         <div class="personal_detail">
             <h2>Your payment details</h2>
             <div class="underline"></div>
-            <img class="visa" src="~/css/visa_mastercard/visa.svg" alt="">
-            <img class="mastercard" src="~/css/visa_mastercard/mastercard.svg" alt="">
+            <img class="visa" src="visa_mastercard/visa.svg" alt="">
+            <img class="mastercard" src="visa_mastercard/mastercard.svg" alt="">
             <div class="form-row">
                 <div class="form-group">
                     <label for="first-name">Full name</label>
@@ -86,9 +86,13 @@
             I accept&nbsp;<a href="https://www.timetostay.fi/general-conditions-for-reservations-and-cancellations-and-rules-and-regulations/?lang=en" target="_blank">reservation conditions</a> &nbsp;and&nbsp;
             <a href="https://www.lawdonut.co.uk/business/sector-specific-law/hotel-legal-issues" target="_blank"> legal conditions</a>.
         </label>
+
         <div class="form-buttons">
-            <button class="back_button" type="button" onclick="history.back()">Back</button>
-            <button class="continue_button" type="submit" disabled>Continue</button>
+            <button class="back_button" type="button">Back</button>
+            <button onclick="window.location.href='/Complete_pay4_4/Complete_pay4_4'" class="continue_button" >Confirm</button>
+
+           
+
         </div>
     </form>
     <div class="booking-summary">
@@ -136,21 +140,6 @@
     </div>
 </div>
 
-
-<!-- Success form hiện ta khi nhấn button continue -->
-
-<div class="overlay" id="thank-you-overlay">
-    <div class="thank-you-popup">
-        <div class="checkmark-circle">
-            <i class="fas fa-check"></i>
-        </div>
-        <h2>Thank For Your Booking!</h2>
-        <p>We have sent an invoice to nguyensithi07@gmail.com for <br>your reference. Additionally, you can download the  <br> invoice directly from this page.</p>
-        <button class="book_more">Book more rooms</button>
-        <button class="view_details">View my booking details</button>
-    </div>
-</div>
-<!-- end -->
 
 
 
