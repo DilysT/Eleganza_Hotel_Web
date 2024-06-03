@@ -5,7 +5,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link href="~/css/personal_info.css" rel="stylesheet" />
+    <link href="~/css/personalinfo.css" rel="stylesheet" />
     <link rel="stylesheet" href="form.css">
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 </head>
@@ -158,8 +158,10 @@
             </div>
         </div>
         <div class="form-buttons">
-            <button class="back_button" type="button" onclick="history.back()">Back</button>
-            <button class="continue_button" type="submit" disabled>Continue</button>
+            <button onclick="window.location.href='/Search_room/Search_room'"
+                class="back_button">Back</button>
+            <button onclick="window.location.href='/Payment_detail/Payment_detail'"
+                class="continue_button" disabled>Continue</button>
         </div>
 
     </form>
@@ -212,6 +214,13 @@
 </div>
 
 <script>
+    document.querySelector('.continue_button').addEventListener('click', function (event) {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định của nút (làm mới trang)
+        window.location.href = '/Payment_detail/Payment_detail'; // Chuyển hướng trang
+    });
+
+
+
     document.addEventListener('DOMContentLoaded', function () {
         const countryCityMap = {
             "Vietnam": ["Ho Chi Minh", "Ha Noi", "Bien Hoa", "Cam Ranh", "Hue", "Thu Dau Mot", "Quang Ngai", "Da Lat", "Nha Trang", "Vinh", "Ba Ria - Vung Tau"],

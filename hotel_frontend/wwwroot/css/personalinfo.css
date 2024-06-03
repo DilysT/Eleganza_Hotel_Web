@@ -1,0 +1,1101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+@font-face {
+    font-family: 'HV_Muse';
+    src: url('Font/HVMuse-Regular.woff') format('woff'), url('Font/HVMuse-Regular.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'HVMuse';
+    src: url('Font/HVMuse-Italic.woff2') format('woff2'), url('Font/HVMuse-Italic.woff') format('woff');
+    font-weight: lighter;
+    font-style: italic;
+    font-display: normal;
+}
+/* footer */
+.footer {
+    margin-top: 7%;
+    background: rgba(26, 26, 26, 1);
+    height: 100%; /* thay đổi từ 637px thành 100% */
+    position: relative;
+}
+
+.contact {
+    position: absolute;
+    top: 14%;
+    left: 40%;
+    color: rgba(211, 211, 211, 1);
+    font-size: 2.2vw; /* thay đổi từ px thành vw */
+    font-weight: 400;
+    font-family: "HV_Muse", sans-serif;
+}
+
+.phonenumber {
+    position: absolute;
+    top: 26%; /* tính toán vị trí dựa trên top của .contact */
+    left: 41%;
+    color: #fff;
+    font-size: 3.2vw; /* thay đổi từ px thành vw */
+    font-family: 'HV_Muse', sans-serif;
+}
+
+.email {
+    position: absolute;
+    color: white;
+    font-size: 1.2vw; /* thay đổi từ px thành vw */
+    border-width: 0.2vw; /* thay đổi từ px thành vw */
+    top: 42%; /* tính toán vị trí dựa trên top của .phonenumber */
+    left: 42%;
+    border-style: solid;
+    padding-top: 1vw; /* thay đổi từ px thành vw */
+    padding-bottom: 1vw;
+    padding-left: 4vw;
+    padding-right: 2vw;
+    border-radius: 4vw; /* thay đổi từ px thành vw */
+    text-transform: lowercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.khung1 {
+    width: 2.5vw; /* thay đổi từ px thành vw */
+    height: 2.5vw; /* thay đổi từ px thành vw */
+    margin-left: 42.7%;
+    margin-bottom: 19.5%;
+}
+
+.mail {
+    width: 1.8vw; /* thay đổi từ px thành vw */
+    height: 1.1vw; /* thay đổi từ px thành vw */
+    margin-left: -2.42vw; /* thay đổi từ px thành vw */
+    margin-bottom: 20vw;
+    margin-top: 17.9%;
+}
+
+.address {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Logo {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-size: 1.5vw; /* thay đổi từ px thành vw */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mar {
+    position: absolute;
+    font-size: 1vw; /* thay đổi từ px thành vw */
+    top: 70%;
+    left: 42%;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.calle {
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    font-size: 1vw; /* thay đổi từ px thành vw */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nocopy {
+    position: absolute;
+    top: 88%;
+    left: 5%;
+    font-size: 1vw; /* thay đổi từ px thành vw */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Logo1 {
+    position: absolute;
+    top: 88%;
+    left: 11%;
+    font-size: 1vw; /* thay đổi từ px thành vw */
+    font-family: 'Open Sans', sans-serif;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+.poli {
+    position: absolute;
+    top: 88%;
+    left: 76%;
+    font-size: 1vw; /* thay đổi từ px thành vw */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.term {
+    position: absolute;
+    top: 88%;
+    right: 5%;
+    font-size: 1vw; /* thay đổi từ px thành vw */
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* end */
+
+/*header*/
+
+:root {
+    --primary: #09537b;
+    --secondary: #24b2ce;
+    --blackground-color: white;
+}
+/*chỉnh funtion chung*/
+* {
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+html { /*not touch*/
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+    html::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: .5rem;
+    }
+
+
+
+.heading {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.btn { /*button book now*/
+    position: absolute;
+    display: inline-block;
+    justify-content: right;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* header */
+
+/* Thiết lập header */
+.header {
+    position: fixed; /* Vị trí cố định */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Độ sâu hiển thị */
+    background: white; /* Màu nền */
+    box-shadow: var(--box-shadow); /* Đổ bóng */
+    display: flex; /* Sắp xếp các thành phần theo hàng ngang */
+    justify-content: space-between; /* Căn chỉnh các thành phần theo khoảng cách đều nhau */
+    padding: 25px; /* Khoảng cách nội dung và mép */
+    align-items: center; /* Căn chỉnh các thành phần theo trục dọc */
+    border-bottom: 1px solid black;
+    transition: background-color 0.4s ease-in-out;
+}
+
+
+
+    /* Button "Book now" */
+    .header .btn {
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+        border: 1px solid rgba(71, 55, 35, 1);
+        ; /* Thêm khung đen 2px */
+        padding-top: 12px; /* Thêm padding cho nút */
+        padding-bottom: 12px;
+        padding-left: 35px;
+        padding-right: 35px;
+        transition: none;
+    }
+
+
+    .header .butt .btn:hover {
+        background-color: rgba(170, 131, 83, 1);
+        border: 1px solid transparent;
+    }
+
+
+
+    .header .butt .btn:active {
+        background-color: rgba(170, 131, 83, 1);
+    }
+
+    .header .butt {
+        background: var(--white); /* Màu nền */
+    }
+
+        .header.butt .btn {
+            border-width: 10px;
+        }
+
+    /* Chữ trong navbar */
+    .header a {
+        font-size: 17px;
+        margin: 0 1rem; /* Khoảng cách giữa các từ */
+        position: relative; /* Đặt vị trí tương đối cho gạch chân */
+        color: rgba(71, 55, 35, 1);
+        background-repeat: no-repeat;
+        font-weight: 400;
+    }
+
+
+    /* Gạch chân dưới chữ */
+    .header .general a::after {
+        content: "";
+        position: absolute; /* Đặt vị trí tuyệt đối cho gạch chân */
+        bottom: -2px; /* Điều chỉnh vị trí của gạch chân */
+        left: 0; /* Đặt gạch chân ở bên trái */
+        width: 0; /* Ẩn gạch chân ban đầu */
+        height: 2px; /* Chiều cao của gạch chân */
+        background-color: rgba(71, 55, 35, 1);
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out; /* Hiệu ứng chuyển đổi */
+    }
+
+    .header .general {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+        /* Khi hover chữ */
+        .header .general a:hover::after {
+            width: 100%; /* Kéo dài gạch chân khi hover */
+            left: 0; /* Đặt lại vị trí ban đầu của gạch chân */
+        }
+
+    /* Khi không hover chữ */
+    .header a:not(:hover)::after {
+        width: 0; /* Thu hẹp gạch chân khi không hover */
+        left: 50%; /* Đưa gạch chân về giữa */
+    }
+
+/*end header*/
+
+
+input {
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: -80px;
+    margin-left: 20px; /*chỉnh k/c khung calendar*/
+    padding: 10px !important;
+    border: none;
+    box-sizing: border-box;
+    background-color: #fff !important;
+    color: #000 !important;
+    font-size: 16px !important;
+    letter-spacing: 1px;
+    position: relative;
+    width: 340px; /*độ rộng khung input*/
+    height: 48px;
+}
+
+
+    input:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        border: 1px solid rgba(121, 93, 59, 1) !important;
+        outline-width: 0;
+        box-shadow: 0 1px 5px rgba(121, 93, 59, 1) !important;
+    }
+
+
+
+.input-group.input-daterange {
+    padding-right: 10px;
+}
+
+
+.city {
+    margin-left: 12px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.select_city {
+    padding: 5px;
+    width: 400px;
+    height: 48px;
+    margin-left: -48px;
+    margin-top: 27px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.country {
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.select_country {
+    padding: 10px;
+    width: 400px;
+    height: 48px;
+    margin-left: -65px;
+    margin-top: 27px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.your_request {
+    margin-top: -95px;
+}
+/*progress line*/
+
+.line-container {
+    margin-top: 25vh;
+    display: flex;
+    width: 55%;
+    margin-left: 300px;
+}
+
+.progress-line {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 100%;
+    background: grey;
+    height: 5px;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status {
+    position: relative;
+    top: -9.5px;
+}
+
+.dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    border: 1.5px solid grey;
+    cursor: pointer;
+    position: relative;
+}
+
+    .dot.current {
+        background: white;
+        border: 1px solid black;
+    }
+
+    .dot.completed {
+        background: black;
+        border: 1.5px solid black;
+        position: relative;
+    }
+
+        .dot.completed span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: white; /* Màu chữ trắng */
+            font-size: 16px; /* Kích thước chữ */
+        }
+
+    .dot span {
+        display: block;
+        width: 100%;
+        margin-left: 8px;
+        margin-top: 2px;
+    }
+
+    .dot:nth-child(2),
+    .dot:nth-child(3) {
+        background: grey;
+        border: 5px solid grey;
+    }
+
+        .dot:nth-child(2) span,
+        .dot:nth-child(3) span {
+            font-size: 14px; /* Điều chỉnh kích thước chữ */
+        }
+
+.progress {
+    position: absolute;
+    width: 50%; /* Thay đổi độ dài thanh tiến trình tại đây */
+    height: 100%;
+    background: black;
+}
+
+.dot_3 {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    border: 1.5px solid grey;
+    cursor: pointer;
+    position: relative;
+    margin-left: 60px;
+}
+
+    .dot_3 .dot_3_1 {
+        display: block;
+        width: 100%;
+        margin-left: 8px;
+        margin-top: 2px;
+    }
+
+.dot_2 {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    border: 1.5px solid grey;
+    cursor: pointer;
+    position: relative;
+    margin-left: 70px;
+}
+
+    .dot_2 .dot_2_1 {
+        display: block;
+        width: 100%;
+        margin-left: 8px;
+        margin-top: 2px;
+    }
+
+.daterangepicker .calendar-table .today.available {
+    position: relative;
+    overflow: hidden;
+}
+
+    .daterangepicker .calendar-table .today.available:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 1px solid black;
+    }
+
+/*xóa ngày kế tiếp của tháng bản bên trái*/
+.drp-calendar.right td.off.ends.available {
+    color: white !important;
+}
+
+.drp-calendar td.off.ends.available {
+    color: rgba(184, 184, 184, 1) !important;
+}
+
+/*xóa ngày kế tiếp của tháng bản bên trái*/
+.drp-calendar.left td.off.ends.in-range.available {
+    color: white !important;
+}
+
+    .drp-calendar.left td.off.ends.in-range.available:hover {
+        display: none;
+    }
+
+
+
+/*personal form*/
+
+.personal_detail {
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Sử dụng màu viền chung */
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif; /* Sử dụng font chung */
+    background-color: var(--blackground-color); /* Sử dụng biến màu nền */
+    padding: 20px;
+    border: 1px solid rgba(150, 150, 150, 1); /* Sử dụng biến màu chính */
+    box-shadow: 0 1px 5px rgba(150, 150, 150, 1) !important;
+    height: 650px;
+    max-width: 867px;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px; /* Thay đổi kích thước phù hợp */
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: -5px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.form-group .first_name {
+    width: 397px;
+    margin-left: 10px;
+}
+
+.form-group textarea { /*khung điền request*/
+    height: 96px;
+    margin: 10px;
+    width: 96%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Sử dụng màu viền chung */
+}
+
+    .form-group textarea:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        border: 1px solid rgba(121, 93, 59, 1) !important;
+        outline-width: 0;
+        box-shadow: 0 1px 5px rgba(121, 93, 59, 1) !important;
+    }
+
+.form-group input,
+.form-group select {
+    margin: 10px;
+    width: 96%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Sử dụng màu viền chung */
+    border-radius: 1px; /* Bo tròn viền */
+}
+
+    .form-group input[type="number"] {
+        width: auto;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+.additional-services-container {
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Sử dụng màu viền chung */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.additional-services {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .additional-services label {
+        margin-right: auto;
+    }
+
+.form-buttons {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.error-message {
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+
+
+.personal_detail .form-group,
+.personal_detail .form-row {
+    margin-bottom: 3px;
+}
+
+.underline {
+    width: calc(96%);
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2); /* Sử dụng màu viền chung */
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 12px;
+}
+
+/*phone number*/
+
+
+.select-box {
+    position: relative;
+    width: 1rem;
+    margin: 7rem auto;
+    margin-left: 230px;
+}
+
+    .select-box input {
+        width: 100%;
+        padding: 1rem .6rem;
+        font-size: 1.1rem;
+        border: .1rem solid transparent;
+        outline: none;
+    }
+
+input[type="tel"] {
+    margin-top: 0px;
+    margin-left: -8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.select-box input:focus {
+    border: .1rem solid #111; /* var(--primary) */
+}
+
+.selected-option {
+    box-shadow: 0 1px 5px rgba(121, 93, 59, 1) !important;
+    margin-top: -170px;
+    height: 47px;
+    width: 397px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 215px;
+}
+
+
+
+    .selected-option div {
+        position: relative;
+        width: 6rem;
+        padding: 0 2.8rem 0 .5rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+        .selected-option div::after {
+            position: absolute;
+            content: "";
+            left: 80px;
+            top: 45%;
+            transform: translateY(-50%) rotate(45deg);
+            width: .4rem;
+            height: .4rem;
+            border-right: .12rem solid #111; /* var(--primary) */
+            border-bottom: .12rem solid #111; /* var(--primary) */
+            transition: .2s;
+        }
+
+        .selected-option div.active::after {
+            transform: translateY(-50%) rotate(225deg);
+        }
+
+.select-box .options {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: .5rem;
+    display: none;
+}
+
+    .select-box .options.active {
+        display: block;
+        width: 0px;
+    }
+
+
+
+input.search-box {
+    background-color: #111; /* var(--primary) */
+    color: #fff;
+    border: 1px solid rgba(184, 184, 184, 1);
+    margin-left: 215px;
+    width: 397px;
+}
+
+.select-box ol {
+    list-style: none;
+    max-height: 23rem;
+    overflow: overlay;
+    margin-left: 215px;
+    width: 360px;
+    border: 1px solid rgba(184, 184, 184, 1);
+    background-color: white;
+}
+
+    .select-box ol::-webkit-scrollbar {
+        width: 0.6rem;
+    }
+
+    .select-box ol::-webkit-scrollbar-thumb {
+        width: 0.4rem;
+        height: 3rem;
+        background-color: #ccc;
+        border-radius: .4rem;
+    }
+
+    .select-box ol li {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        margin-left: -40px;
+    }
+
+        .select-box ol li.hide {
+            display: none;
+        }
+
+        .select-box ol li:not(:last-child) {
+            border-bottom: .1rem solid #eee;
+        }
+
+        .select-box ol li:hover {
+            background-color: rgba(229, 217, 202, 1);
+        }
+
+        .select-box ol li:active {
+            background-color: rgba(170, 131, 83, 1);
+        }
+
+        .select-box ol li .country-name {
+            margin-left: .4rem;
+        }
+
+.additional_services {
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Sử dụng màu viền chung */
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif; /* Sử dụng font chung */
+    background-color: var(--blackground-color); /* Sử dụng biến màu nền */
+    padding: 20px;
+    border: 1px solid rgba(150, 150, 150, 1); /* Sử dụng biến màu chính */
+    box-shadow: 0 1px 5px rgba(150, 150, 150, 1) !important;
+    height: 216px;
+    max-width: 867px;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+.form-group1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.service-name, .service-price, .service-price1 {
+    margin-left: 10px;
+    color: gray;
+}
+
+input[type="checkbox"]:checked ~ .service-name,
+input[type="checkbox"]:checked ~ .service-price,
+input[type="checkbox"]:checked ~ .service-price1 {
+    color: black;
+}
+
+/* Custom checkbox */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+    .custom-checkbox input[type="checkbox"] {
+        display: none;
+    }
+
+    .custom-checkbox .custom-checkmark {
+        width: 24px;
+        height: 24px;
+        background-color: white;
+        border: 1px solid rgba(150, 150, 150, 1);
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+
+    .custom-checkbox input[type="checkbox"]:checked + .custom-checkmark {
+        background-color: rgba(170, 131, 83, 1); /* Thay đổi màu khi checkbox được chọn */
+        border: 1px solid white;
+    }
+
+    .custom-checkbox .custom-checkmark:after {
+        content: "";
+        display: none;
+        position: relative;
+        left: 9px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+    }
+
+    .custom-checkbox input[type="checkbox"]:checked + .custom-checkmark:after {
+        display: block;
+    }
+
+/* Custom select dropdown */
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.custom-select {
+    position: relative;
+    display: block;
+    width: 52px;
+    height: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+    color: gray;
+}
+
+    .custom-select.enabled {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    .custom-select::after {
+        content: '';
+        border: solid black;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        pointer-events: none;
+    }
+
+.custom-select-wrapper.active .custom-select::after {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.custom-select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+    .custom-select-options div {
+        padding: 5px;
+        cursor: pointer;
+    }
+
+        .custom-select-options div:hover {
+            background-color: rgba(170, 131, 83, 1);
+            color: white;
+        }
+
+.custom-select-wrapper.active .custom-select-options {
+    margin-top: 10px;
+    display: block;
+}
+
+.meeting {
+    margin-top: 24px;
+}
+
+.service-price {
+    margin-left: 215px;
+}
+
+.service-price1 {
+    margin-left: 280px;
+}
+
+.back_button {
+    cursor: pointer;
+    background-color: white;
+    width: 150px;
+    height: 48px;
+    border: 1px solid black;
+    margin-left: 645px;
+}
+
+    .back_button:hover {
+        background-color: black;
+        color: white;
+    }
+
+.continue_button {
+    cursor: pointer;
+    width: 150px;
+    height: 48px;
+    background-color: rgba(170, 131, 83, 1);
+    color: white;
+    border: white;
+    margin-right: 380px;
+    margin-left: 20px;
+}
+
+    .continue_button:active {
+        cursor: pointer;
+        background-color: rgba(121, 93, 59, 1);
+        color: white;
+        border: white;
+    }
+
+    .continue_button:disabled {
+        margin-left: 20px;
+        background-color: #e0e0e0;
+        color: #aaa;
+        cursor: not-allowed;
+    }
+
+.error-message {
+    color: red;
+    display: none;
+    margin-left: 10px;
+}
+
+
+
+.parent {
+    display: flex;
+}
+
+
+
+.booking-summary {
+    width: 300px;
+    height: 320px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: -360px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .booking-summary h3 {
+        margin: 0;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .booking-summary h3 span {
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+    .booking-summary hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 20px 0;
+    }
+
+    .booking-summary .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .booking-summary .description {
+        flex: 1;
+        font-weight: 600;
+    }
+
+    .booking-summary .description1 {
+        flex: 1;
+        font-weight: 400;
+    }
+
+    .booking-summary .description small {
+        flex: 1;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+    }
+
+    .booking-summary .price {
+        flex-shrink: 0;
+        margin-left: 10px;
+    }
+
+    .booking-summary .icon {
+        flex-shrink: 0;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .booking-summary .price-wrapper {
+        text-align: right;
+    }
+
+    .booking-summary .total {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .booking-summary .book-button {
+        display: block;
+        height: 28px;
+        padding-top: 12px;
+        background-color: #a37e4c;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        justify-content: center;
+        margin-top: 30px;
+    }
+        .booking-summary .book-button:active {
+            background-color: rgba(121, 93, 59, 1);
+        }
+
+.parent {
+    display: flex;
+}
+
+#no-rooms-selected {
+    display: block;
+    text-align: center;
+}
+
+#booking-summary {
+    display: none;
+}

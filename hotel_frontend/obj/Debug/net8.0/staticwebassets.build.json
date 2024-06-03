@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GJxeSUHAqbK9Xud28Q4ZBtLm8BWid1HqPcD7aJtJNF0=",
+  "Hash": "7AErwcVyacAUw4YtpID9RwPdXyIjwOR4b+ebu8hUtLo=",
   "Source": "hotel_frontend",
   "BasePath": "_content/hotel_frontend",
   "Mode": "Default",
@@ -2316,12 +2316,12 @@
       "OriginalItemSpec": "wwwroot\\css\\Payment_detail.css"
     },
     {
-      "Identity": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\personal_info.css",
+      "Identity": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\personalinfo.css",
       "SourceId": "hotel_frontend",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\",
       "BasePath": "_content/hotel_frontend",
-      "RelativePath": "css/personal_info.css",
+      "RelativePath": "css/personalinfo.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2332,7 +2332,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\personal_info.css"
+      "OriginalItemSpec": "wwwroot\\css\\personalinfo.css"
     },
     {
       "Identity": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\style.css",

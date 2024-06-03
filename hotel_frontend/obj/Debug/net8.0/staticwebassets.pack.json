@@ -481,8 +481,8 @@
       "PackagePath": "staticwebassets\\css\\invoice_image\\eleganza.png"
     },
     {
-      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\personal_info.css",
-      "PackagePath": "staticwebassets\\css\\personal_info.css"
+      "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\personalinfo.css",
+      "PackagePath": "staticwebassets\\css\\personalinfo.css"
     },
     {
       "Id": "E:\\hotel_frontend\\hotel_frontend\\wwwroot\\css\\style.css",
