@@ -69,120 +69,129 @@ dropdown.addEventListener('click', (event) => {
     }
 });
 
-        // sự kiện các rooms
-        document.addEventListener('DOMContentLoaded', function () {
-            // Initially hide the booking summary
-            document.querySelector('.booking-summary').style.display = 'none';
-        
-            document.getElementById('reserve-button').addEventListener('click', function() {
-                document.getElementById('no-rooms-selected').style.display = 'none';
-                document.querySelector('.booking-summary').style.display = 'block';
-            });
-        });
-        
-                // script.js
-                document.addEventListener('DOMContentLoaded', function () {
-                    const sliders = document.querySelectorAll('.image-slider');
-                    const popup = document.getElementById('popup');
-                    const closeBtn = document.querySelector('.close-btn');
-                    const seeMoreLinks = document.querySelectorAll('.see-more');
-                    const popupImageSlider = document.querySelector('.popup-image-slider');
-                    const popupImages = popupImageSlider.querySelectorAll('img');
-                    const popupPrev = popupImageSlider.querySelector('.prev');
-                    const popupNext = popupImageSlider.querySelector('.next');
-                    let popupIndex = 0;
-        
-                    sliders.forEach(slider => {
-                        let index = 0;
-                        const images = slider.querySelectorAll('img');
-                        const prev = slider.querySelector('.prev');
-                        const next = slider.querySelector('.next');
-        
-                        function showImage(newIndex) {
-                            images.forEach((img, i) => {
-                                img.classList.remove('active', 'prev');
-                                if (i === newIndex) {
-                                    img.classList.add('active');
-                                } else if (i === index) {
-                                    img.classList.add('prev');
-                                }
-                            });
-                            index = newIndex;
-                        }
-        
-                        prev.addEventListener('click', () => {
-                            const newIndex = (index > 0) ? index - 1 : images.length - 1;
-                            showImage(newIndex);
-                        });
-        
-                        next.addEventListener('click', () => {
-                            const newIndex = (index < images.length - 1) ? index + 1 : 0;
-                            showImage(newIndex);
-                        });
-        
-                        showImage(index);
-                    });
-        
-                    function showPopupImage(newIndex) {
-                        popupImages.forEach((img, i) => {
-                            img.classList.remove('active', 'prev');
-                            if (i === newIndex) {
-                                img.classList.add('active');
-                            } else if (i === popupIndex) {
-                                img.classList.add('prev');
-                            }
-                        });
-                        popupIndex = newIndex;
-                    }
-        
-                    popupPrev.addEventListener('click', () => {
-                        const newIndex = (popupIndex > 0) ? popupIndex - 1 : popupImages.length - 1;
-                        showPopupImage(newIndex);
-                    });
-        
-                    popupNext.addEventListener('click', () => {
-                        const newIndex = (popupIndex < popupImages.length - 1) ? popupIndex + 1 : 0;
-                        showPopupImage(newIndex);
-                    });
-        
-                    seeMoreLinks.forEach(link => {
-                        link.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            popup.style.display = 'flex';
-                            showPopupImage(popupIndex);
-                        });
-                    });
-        
-                    closeBtn.addEventListener('click', () => {
-                        popup.style.display = 'none';
-                    });
-        
-                    popup.addEventListener('click', (e) => {
-                        if (e.target === popup) {
-                            popup.style.display = 'none';
-                        }
-                    });
-                });
-        
-        
-        
-                // Thêm sự kiện hover vào biểu tượng chấm than
-        document.addEventListener('DOMContentLoaded', function () {
-            const tooltipIcons = document.querySelectorAll('.tooltip-icon');
-            const tooltipTexts = document.querySelectorAll('.tooltip-text');
-        
-            tooltipIcons.forEach((tooltipIcon, index) => {
-                const tooltipText = tooltipTexts[index];
-        
-                tooltipIcon.addEventListener('mouseover', () => {
-                    tooltipText.style.display = 'block';
-                });
-        
-                tooltipIcon.addEventListener('mouseout', () => {
-                    tooltipText.style.display = 'none';
-                });
-            });
-        });
-        
+document.addEventListener('DOMContentLoaded', function () {
+    // Initially hide the booking summary
+    document.querySelector('.booking-summary').style.display = 'none';
 
-      
+    // Get all buttons with class 'card'
+    const reserveButtons = document.querySelectorAll('.card');
+
+    // Add event listener to each button
+    reserveButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            document.getElementById('no-rooms-selected').style.display = 'none';
+            document.querySelector('.booking-summary').style.display = 'block';
+        });
+    });
+});
+
+// script.js
+document.addEventListener('DOMContentLoaded', function () {
+    const sliders = document.querySelectorAll('.image-slider');
+    const popup = document.getElementById('popup');
+    const closeBtn = document.querySelector('.close-btn');
+    const seeMoreLinks = document.querySelectorAll('.see-more');
+    const popupImageSlider = document.querySelector('.popup-image-slider');
+    const popupImages = popupImageSlider.querySelectorAll('img');
+    const popupPrev = popupImageSlider.querySelector('.prev');
+    const popupNext = popupImageSlider.querySelector('.next');
+    let popupIndex = 0;
+
+    sliders.forEach(slider => {
+        let index = 0;
+        const images = slider.querySelectorAll('img');
+        const prev = slider.querySelector('.prev');
+        const next = slider.querySelector('.next');
+
+        function showImage(newIndex) {
+            images.forEach((img, i) => {
+                img.classList.remove('active', 'prev');
+                if (i === newIndex) {
+                    img.classList.add('active');
+                } else if (i === index) {
+                    img.classList.add('prev');
+                }
+            });
+            index = newIndex;
+        }
+
+        prev.addEventListener('click', () => {
+            const newIndex = (index > 0) ? index - 1 : images.length - 1;
+            showImage(newIndex);
+        });
+
+        next.addEventListener('click', () => {
+            const newIndex = (index < images.length - 1) ? index + 1 : 0;
+            showImage(newIndex);
+        });
+
+        showImage(index);
+    });
+
+    function showPopupImage(newIndex) {
+        popupImages.forEach((img, i) => {
+            img.classList.remove('active', 'prev');
+            if (i === newIndex) {
+                img.classList.add('active');
+            } else if (i === popupIndex) {
+                img.classList.add('prev');
+            }
+        });
+        popupIndex = newIndex;
+    }
+
+    popupPrev.addEventListener('click', () => {
+        const newIndex = (popupIndex > 0) ? popupIndex - 1 : popupImages.length - 1;
+        showPopupImage(newIndex);
+    });
+
+    popupNext.addEventListener('click', () => {
+        const newIndex = (popupIndex < popupImages.length - 1) ? popupIndex + 1 : 0;
+        showPopupImage(newIndex);
+    });
+
+    seeMoreLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            popup.style.display = 'flex';
+            showPopupImage(popupIndex);
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
+
+
+
+// Thêm sự kiện hover vào biểu tượng chấm than
+document.addEventListener('DOMContentLoaded', function () {
+    const tooltipIcons = document.querySelectorAll('.tooltip-icon');
+    const tooltipTexts = document.querySelectorAll('.tooltip-text');
+
+    tooltipIcons.forEach((tooltipIcon, index) => {
+        const tooltipText = tooltipTexts[index];
+
+        tooltipIcon.addEventListener('mouseover', () => {
+            tooltipText.style.display = 'block';
+        });
+
+        tooltipIcon.addEventListener('mouseout', () => {
+            tooltipText.style.display = 'none';
+        });
+    });
+});
+
+
+document.querySelectorAll('.icon').forEach(function (icon) {
+    icon.addEventListener('click', function () {
+        this.closest('.item').remove();
+    });
+});
